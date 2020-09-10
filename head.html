@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[E宠商城]</title>
+  <script src="js/vue.js"></script>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/head.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="headerTop">
+      <div class="ct container">
+        <ul class="head-hl">
+          <li class="hl-item hl-brand">
+            <a href="index.html" class="epet-brand dcc">E宠首页</a>
+          </li>
+          <li class="hl-item place-send">送至：</li>
+          <li class="hl-item place-str c66">河南</li>
+          <li class="hl-item epetbrand c66">E宠就是正品</li>
+        </ul>
+        <ul class="head-hr">
+          <li class="dcc" id="tologin">[登陆]</li>
+          <li class="dcc" id="toregister">[注册]</li>
+          <li class="cart-t">
+            <i></i><a href="#">购物车(<em id="cart-num">0</em>)</a>
+          </li>
+          <li class="my collect topgz dcc">
+            <i></i><span>我的E宠</span><b></b>
+            <ul class="myec_tc boxsha">
+              <li class="dcc">我的订单</li>
+              <li class="dcc">退换货记录</li>
+              <li class="dcc">我的优惠券</li>
+              <li class="dcc">VIP俱乐部</li>
+            </ul>
+          </li>
+          <li class="collect topgz dcc">
+            <i></i><span>收藏</span><b></b>
+            <ul class="myec_tc boxsha">
+              <li class="dcc">我的收藏</li>
+            </ul>
+          </li>
+          <li class="mobile topgz">
+            <i></i>
+            <sapn>手机版</sapn>
+            <img src="https://static.epetbar.com/static_web/pc/src/images/background/code.png" alt="">
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="headerBot">
+      <div class="head-bh pt10">
+        <div class="hb container">
+          <div class="head-logo">
+            <a href="index.html">
+              <img src="https://static.epetbar.com/static_web/pc/dist/images/background/epet-logo.png" alt="">
+            </a>
+          </div>
+          <div class="search">
+            <div class="search-t">
+              <input type="text" placeholder="纽萃宝"><span class="btn">搜索</span>
+            </div>
+            <div class="keywords">
+              <label>热门搜索：</label>
+              <ul class="list">
+                <li class="item cred">伯纳天纯</li>
+                <li class="stp">|</li>
+                <li class="item">冠能</li>
+                <li class="stp">|</li>
+                <li class="item">粑粑抓</li>
+                <li class="stp">|</li>
+                <li class="item">小青鲨</li>
+                <li class="stp">|</li>
+                <li class="item">智能喂食</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cart">
+            <a href="#">购物车(<em id="cart-num">0</em>)</a>
+          </div>
+        </div>
+      </div>
+      <div class="head-bb pt10">
+        <div class="bb container">
+          <nav class="nav">
+            <div class="w wl">狗狗<b></b></div>
+            <div class="w wr">商品分类<b></b>
+              <div class="catelist">
+                <p></p>
+                <ul class="dogtype" id="dogtype">
+                  <li class="dog-item" data-i="1">
+                    <a href="#">主粮</a>
+                    <a href="#">零食</a>
+                    <!-- 菜单 -->
+                    <div class="nav-menu">
+                      <div class="mincate" id="food">
+                        <div class="ctitle">
+                          <img
+                            src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0104701_111170.jpg@!50w-c"
+                            alt="">
+                          <a href="#">狗狗主粮</a>
+                          <i></i>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+
+                      </div>
+                      <div class="mincate" id="snacks">
+                        <div class="ctitle">
+                          <img
+                            src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0104701_111170.jpg@!50w-c"
+                            alt="">
+                          <a href="#">狗狗零食</a>
+                          <i></i>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="dog-item" data-i="2">
+                    <a href="#">窝垫</a>
+                    <a href="#">玩具</a>
+                    <!-- 菜单 -->
+                    <div class="nav-menu">
+                      <div class="mincate" id="cushion">
+                        <div class="ctitle">
+                          <img
+                            src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0104701_111170.jpg@!50w-c"
+                            alt="">
+                          <a href="#">狗狗窝垫</a>
+                          <i></i>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+
+                      </div>
+                      <div class="mincate" id="toys">
+                        <div class="ctitle">
+                          <img
+                            src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0104701_111170.jpg@!50w-c"
+                            alt="">
+                          <a href="#">狗狗玩具</a>
+                          <i></i>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="dog-item" data-i="3">
+                    <a href="#">清洁</a>
+                    <a href="#">保健</a>
+                    <!-- 菜单 -->
+                    <div class="nav-menu">
+                      <div class="mincate" id="cleaning">
+                        <div class="ctitle">
+                          <img
+                            src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0104701_111170.jpg@!50w-c"
+                            alt="">
+                          <a href="#">狗狗窝垫</a>
+                          <i></i>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+
+                      </div>
+                      <div class="mincate" id="health">
+                        <div class="ctitle">
+                          <img
+                            src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0104701_111170.jpg@!50w-c"
+                            alt="">
+                          <a href="#">狗狗玩具</a>
+                          <i></i>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="dog-item" data-i="4">
+                    <a href="#">护理</a>
+                    <a href="#">生活</a>
+                    <!-- 菜单 -->
+                    <div class="nav-menu">
+                      <div class="mincate" id="nursing">
+                        <div class="ctitle">
+                          <img
+                            src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0104701_111170.jpg@!50w-c"
+                            alt="">
+                          <a href="#">狗狗窝垫</a>
+                          <i></i>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+
+                      </div>
+                      <div class="mincate" id="live">
+                        <div class="ctitle">
+                          <img
+                            src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0104701_111170.jpg@!50w-c"
+                            alt="">
+                          <a href="#">狗狗玩具</a>
+                          <i></i>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="dog-item" data-i="5">
+                    <a href="#">牵引</a>
+                    <a href="#">洗澡</a>
+                    <!-- 菜单 -->
+                    <div class="nav-menu">
+                      <div class="mincate" id="drag">
+                        <div class="ctitle">
+                          <img
+                            src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0104701_111170.jpg@!50w-c"
+                            alt="">
+                          <a href="#">狗狗窝垫</a>
+                          <i></i>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+
+                      </div>
+                      <div class="mincate" id="wash">
+                        <div class="ctitle">
+                          <img
+                            src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0104701_111170.jpg@!50w-c"
+                            alt="">
+                          <a href="#">狗狗玩具</a>
+                          <i></i>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="dog-item" data-i="6">
+                    <a href="#">服饰</a>
+                    <a href="#">美容</a>
+                    <!-- 菜单 -->
+                    <div class="nav-menu">
+                      <div class="mincate" id="dress">
+                        <div class="ctitle">
+                          <img
+                            src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0104701_111170.jpg@!50w-c"
+                            alt="">
+                          <a href="#">狗狗窝垫</a>
+                          <i></i>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+
+                      </div>
+                      <div class="mincate" id="cosmet">
+                        <div class="ctitle">
+                          <img
+                            src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0104701_111170.jpg@!50w-c"
+                            alt="">
+                          <a href="#">狗狗玩具</a>
+                          <i></i>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                        <div class="middle">
+                          <div class="mid_head">
+                            <a href="#">进口狗粮</a>
+                            <img alt="7"
+                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                          </div>
+                          <div class="mid_list">
+                            <a href="#">小型犬专用</a>
+                            <a href="#">大型犬专用</a>
+                            <a href="#">大型犬幼犬专用</a>
+                            <a href="#">夏日清火</a>
+                          </div>
+                        </div>
+                        <div class="dotline"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="dog-item pet-active" data-i="7">
+                    <span>正在进行品牌特卖</span>
+                    <!-- 菜单 -->
+                    <div class="nav-menu">
+                      <div class="action-slider">
+                        <a href="###">
+                          <img src="https://img2.epetbar.com/nowater/showcase/2020/03/31/090455573.jpg" alt="">
+                          <div class="left-time2">仅剩2天</div>
+                        </a>
+                        <a href="###">
+                          <img src="https://img2.epetbar.com/nowater/showcase/2020/03/31/090536618.jpg" alt="">
+                          <div class="left-time2">仅剩2天</div>
+                        </a>
+                        <a href="###">
+                          <img src="https://img2.epetbar.com/nowater/showcase/2020/04/08/092229596.jpg" alt="">
+                          <div class="left-time2">仅剩2天</div>
+                        </a>
+                        <a href="###">
+                          <img src="https://img2.epetbar.com/nowater/showcase/2020/03/31/090444650.jpg" alt="">
+                          <div class="left-time2">仅剩2天</div>
+                        </a>
+                      </div>
+                      <div class="act-click rela">
+                        <a href="###" class="abs btn-tiemai">
+                          <img src="https://static.epetbar.com/www/images/epet/morebuy_icon.png">
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <ul class="nav-list">
+            <li class="nav-item ehk">
+              <a href="http://www.epetht.com" target="_blank"><img src="https://static.epetbar.com/static_www/www/images/epethk-logo.png" alt=""></a>
+            </li>
+            <li class="nav-item">
+              <a href="brand.html" target="_blank">
+                <b></b>
+                <sapn>品牌特卖</sapn>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="popular.html" target="_blank">
+                <b></b>
+                <sapn>潮品视频</sapn>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="theatre.html" target="_blank">
+                <b></b>
+                <sapn>小剧场</sapn>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="classroom.html" target="_blank">
+                <b></b>
+                <sapn>E宠课堂</sapn>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="union.html" target="_blank">
+                <b></b>
+                <sapn>猫爪联盟</sapn>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="special.html" target="_blank">
+                <b></b>
+                <sapn>清仓特价</sapn>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="newlogin-wrap" id="newlogin">
+      <div class="fiexd" id="fiexd"></div>
+      <div class="newlogin">
+        <div class="signin" id="signin">
+
+          <div class="gototitle">
+            <span class="it1 codevar swt" data-i="0">手机验证码登录</span>
+            <span class="liner"></span>
+            <span class="codevar it1 cf0 swt" data-i="1">账户登录</span>
+          </div>
+          <div class="gotologin_con">
+            <div class="login-way">
+              <div class="setting settinguser pl15 flex flex-ac">
+                <span class="pr10"></span>
+                <input type="text" placeholder="请输入手机号" maxlength="11" class="it1">
+              </div>
+              <div class="setting settingcode  pl15 flex flex-pj flex-ac rela">
+                <input type="text" placeholder="请输入短信验证码" maxlength="4" class="it1">
+                <a class="ft14 ftc inputcode"><span id="getcodes" class="codevar">获取验证码</span></a>
+                <div id="popup-captcha"></div>
+              </div>
+            </div>
+            <div class="login-way db">
+              <div class="setting settinguser pl15 flex flex-ac">
+                <span class="pr10"></span>
+                <input type="text" placeholder="请输入手机号/账号" class="it1">
+              </div>
+              <div class="setting settingpw pl15 flex flex-ac">
+                <span class="pr10"></span>
+                <input type="password" value="" maxlength="20" placeholder="请输入密码" class="it1">
+                <a href="https://passport.epet.com/retrieve_password.html?referer=" target="_blank"
+                  class="ft14 ftc inputcode">
+                  <span class="codevar c999">忘记密码</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="bindusergray cfff ft14 ftc mt20 codevar">登录</div>
+          <div class="otherlogin">
+            <span class="loginstype">
+              <a href="#" class="zhifubao"></a>
+              <a href="#" class="weixin"></a>
+              <a href="#" class="QQ"></a>
+            </span>
+            <span class="que ft12 c999">
+              <a class="mr codevar">手机快速注册</a>
+              <span class="codevar">遇到问题？</span>
+            </span>
+          </div>
+        </div>
+        
+        <div class="signup sign" id="signup">
+          <div class="gototitle">
+            <span class="it1 codevar cf0" data-i="0">新用户注册</span>
+            <span class="liner"></span>
+            <span class="codevar it1" id="gotosign">直接登录</span>
+          </div>
+          <div class="gotologin_con">
+            <div class="login-way db">
+              <div class="setting settinguser pl15 flex flex-ac">
+                <span class="pr10"></span>
+                <input type="text" placeholder="请输入手机号" maxlength="11" class="it1">
+              </div>
+              <div class="setting settingcode  pl15 flex flex-pj flex-ac rela">
+                <input type="text" placeholder="请输入短信验证码" maxlength="4" class="it1">
+                <a class="ft14 ftc inputcode"><span id="getcodes" class="codevar">获取验证码</span></a>
+                <div id="popup-captcha"></div>
+              </div>
+            </div>
+          </div>
+          <div class="bindusergray cfff ft14 ftc mt20 codevar">注册</div>
+          <div class="otherlogin">
+            <span class="que ido">
+              <span class="dib fl argent_ico"></span>
+              <span>我同意E宠</span>
+              <a class="mr codevar">《用户实用协议》</a>
+            </span>
+            <span class="codevar">遇到问题？</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="line2"></div>
+
+    <script>
+      const gototitle = document.querySelector('.gototitle')
+      const swt = document.querySelectorAll('.swt')
+      const loginway = document.querySelectorAll('.login-way')
+      const gotosign = document.getElementById('gotosign')
+      const signin = document.getElementById('signin')
+      const signup = document.getElementById('signup')
+      const tologin = document.getElementById('tologin')
+      const toregister = document.getElementById('toregister')
+      const newlogin = document.getElementById('newlogin')
+      const fiexd = document.getElementById('fiexd')
+
+
+      tologin.onclick = function() {
+        newlogin.style.display = "block"
+        signin.classList.add('sign')
+        signup.classList.remove('sign')
+      }
+      toregister.onclick = function() {
+        newlogin.style.display = "block"
+        signup.classList.add('sign')
+        signin.classList.remove('sign')
+      }
+      fiexd.onclick = function() {
+        newlogin.style.display = "none"
+      }
+
+      gototitle.onclick = function (e) {
+        let a = e.target.dataset.i
+        for (let i = 0; i < swt.length; i++) {
+          swt[i].classList.remove('cf0')
+          loginway[i].classList.remove('db')
+        }
+        swt[a].classList.add('cf0');
+        loginway[a].classList.add('db');
+      }
+
+      gotosign.onclick = function() {
+        signin.classList.add('sign')
+        signup.classList.remove('sign')
+      }
+
+    </script>
+    <script src="js/sort.js"></script>
+  </header>
+
+
+  <footer class="footer">
+    <div class="foot-top">
+      <div class="container foot-serve">
+        <ul class="serve-list">
+          <li class="serve-item zp">正品保障</li>
+          <li class="serve-item pl">品类丰富</li>
+          <li class="serve-item yz">优质服务</li>
+          <li class="serve-item kx">科学养宠</li>
+          <li class="serve-item gy">E宠公益</li>
+          <li class="serve-item ty">十年同心</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <div class="container">
+        <div class="info">
+          <div class="info-phone">
+            <div class="img">
+              <img src="https://static.epetbar.com/www/newFooter/dog_phone.gif" alt="">
+            </div>
+            <div class="phone">
+              <h2 class="ft14 c666">售后电话：</h2>
+              <p class="c666 ft20 mt15">4008889200<span class="ml5 ft12">「免长途费」</span></p>
+              <p class="c666 ft20 mt15">023-68851700</p>
+              <p class="c444 ft12 mt15">服务时间：09:00--18:30（周一到周日）</p>
+            </div>
+          </div>
+          <div class="servers-list">
+            <table>
+              <tr>
+                <th>购物指南</th>
+                <th>售后服务</th>
+              </tr>
+              <tr>
+                <td>新人优惠</td>
+                <td>退换货政策</td>
+              </tr>
+              <tr>
+                <td>购物问题</td>
+                <td>退款说明</td>
+              </tr>
+              <tr>
+                <td>支付问题</td>
+                <td>售后问题</td>
+              </tr>
+            </table>
+          </div>
+          <div class="app-code code">
+            <p>扫码下载APP</p>
+            <p>下单更优惠</p>
+            <div class="img">
+              <img src="https://static.epetbar.com/www/images/dw2.png?v=10" alt="">
+            </div>
+          </div>
+          <div class="wx-code code">
+            <p>扫码关注E宠</p>
+            <p>商城微信</p>
+            <div class="img">
+              <img src="https://static.epetbar.com/www/images/app-code.jpg?v=10" alt="">
+            </div>
+          </div>
+        </div>
+        <ul class="link">
+          <li class="link-item">关于我们</li>
+          <li class="link-item">
+            <img src="https://static.epetbar.com/static_web/pc/src/images/background/weibo_logo.png" alt="">E宠商城</li>
+          <li class="link-item">
+            <img src="https://static.epetbar.com/static_web/pc/src/images/background/weixin_logo.png" alt="">E宠商城</li>
+          <li class="link-item">
+            <img src="https://static.epetbar.com/static_web/pc/src/images/background/baidu_log.png" alt="">E宠商城百家号</li>
+          <li class="link-item">
+            <img src="https://static.epetbar.com/static_web/pc/src/images/background/toutiao_logo.png" alt="">E宠说</li>
+          <li class="link-item">E宠公益</li>
+          <li class="link-item">联系我们</li>
+          <li class="link-item">公司地址</li>
+          <li class="link-item">应急响应</li>
+          <li class="link-item">仓储中心</li>
+          <li class="link-item">用户协议</li>
+        </ul>
+        <div class="support">
+          <img src="https://static.epetbar.com/www/newFooter/12315.png" alt="" title="12315消费维权">
+          <img src="https://static.epetbar.com/www/newFooter/360.png" alt="" title="360网站完全">
+          <img src="https://static.epetbar.com/www/newFooter/chengxin.png" alt="" title="诚信网站">
+          <img src="https://static.epetbar.com/www/newFooter/shiming.png" alt="">
+          <img src="https://static.epetbar.com/www/newFooter/tx.png" alt="">
+          <img src="https://static.epetbar.com/www/newFooter/jybz.png" alt="">
+          <img src="https://static.epetbar.com/www/newFooter/cqgs.png" alt="">
+          <img src="https://static.epetbar.com/www/newFooter/baiq.png" alt="">
+          <img src="https://static.epetbar.com/www/newFooter/wsls.png" alt="">
+          <img src="https://static.epetbar.com/www/newFooter/sfqy.png" alt="">
+          <img src="https://static.epetbar.com/www/newFooter/yxqy.png" alt="">
+          <img src="https://static.epetbar.com/www/newFooter/bhdw.png" alt="">
+          <img src="https://static.epetbar.com/www/newFooter/sjws.png" alt="">
+        </div>
+        <div class="copy">
+          <a href="#">渝ICP备10002905号-1</a>&nbsp;&nbsp;<a href="#">渝ICP备10002905号-3</a>　<a href="#">营业执照</a>　<a
+            href="#">兽药经营许可证</a>　增值电信业务经营许可证：渝B2-20140042 Copyright © 2007-2020 epet.com 　重庆易宠科技有限公司
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="slider">
+    <ul class="slider-up">
+      <li class="item i-user">
+        <a class="bg user w35" href="#"></a>
+        <div class="userbox">
+          <div style="text-align: center;color: #000;padding: 50px 0;">您还没有登录，请先<span
+              style="text-decoration: underline;color: red; cursor: pointer;">登录</span>。</div>
+        </div>
+      </li>
+      <li class="item i-cart">
+        <a class="cart" href="#">
+          <span class="bg w35"></span>
+          <div class="cart-num">
+            购物车<span>0</span>
+          </div>
+        </a>
+        <div class="cartbox">
+          <div style="text-align: center; color: #000;margin-bottom: 20px; font-weight: 600; font-size: 14px;">
+            您的购物车中暂无商品，赶快选择心爱的商品吧！</div>
+        </div>
+      </li>
+      <li class="item">
+        <a class="cart serve" href="#">
+          <span class="bg w35"></span>
+          <div class="cart-num">
+            在线客服<span>0</span>
+          </div>
+        </a>
+      </li>
+      <li class="item">
+        <a class="bg order w35" href="#"></a>
+      </li>
+      <li class="item">
+        <a class="bg view w35" href="#"></a>
+      </li>
+    </ul>
+    <ul class="slider-down">
+      <li class="item phone">
+        <a class="bg order w35" href="#"></a>
+      </li>
+      <li class="item wx">
+        <a class="bg view w35" href="#"></a>
+      </li>
+      <li class="item sina">
+        <a class="bg view w35" href="#"></a>
+      </li>
+      <li class="item btop">
+        <a class="bg view w35" href="#"></a>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>
