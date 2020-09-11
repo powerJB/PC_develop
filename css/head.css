@@ -986,6 +986,48 @@
 .slider .item a {
   display: block;
 }
+
+
+.slider .userbox .bagp {
+  margin: 2px 5px 0;
+  padding: 17px 14px 14px 0;
+  display: flex;
+}
+.slider .userbox .bagp .hd img {
+  display: block;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  border: #110d09 solid 1px;
+}
+.slider .userbox .baginfo {
+  padding: 14px 0 0 13px;
+}
+.slider .userbox .baginfo span {
+  font-weight: 600;
+  color: #000;
+}
+.slider .userbox .epet-data {
+  border-top: 1px dashed #e5e5e5;
+  margin: 0 5px;
+  padding: 8px 14px 8px 0;
+  border-bottom: 1px dashed #e5e5e5;
+  display: flex;
+}
+.slider .userbox .epet-data a img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #1c1711;
+}
+.slider .userbox .epet-name a {
+  margin-top: 10px;
+  margin-left: 20px;
+  color: #444;
+}
+
+
+
 .slider .item .w35 {
   width: 35px;
   height: 35px;

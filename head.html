@@ -22,7 +22,7 @@
           <li class="hl-item place-str c66">河南</li>
           <li class="hl-item epetbrand c66">E宠就是正品</li>
         </ul>
-        <ul class="head-hr">
+        <ul class="head-hr" id="userinfo">
           <li class="dcc" id="tologin">[登陆]</li>
           <li class="dcc" id="toregister">[注册]</li>
           <li class="cart-t">
@@ -98,8 +98,7 @@
                     <div class="nav-menu">
                       <div class="mincate" id="food">
                         <div class="ctitle">
-                          <img
-                            src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0104701_111170.jpg@!50w-c"
+                          <img src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0104701_111170.jpg@!50w-c"
                             alt="">
                           <a href="#">狗狗主粮</a>
                           <i></i>
@@ -108,8 +107,7 @@
                         <div class="middle">
                           <div class="mid_head">
                             <a href="#">进口狗粮</a>
-                            <img alt="7"
-                              src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
+                            <img alt="7" src="https://img2.epetbar.com/common/upload/commonfile/2020/04/010/0101719_658143.jpg@!50w-c">
                           </div>
                           <div class="mid_list">
                             <a href="#">小型犬专用</a>
@@ -1177,6 +1175,7 @@
       </div>
     </div>
 
+    <!-- 注册、登录 -->
     <div class="newlogin-wrap" id="newlogin">
       <div class="fiexd" id="fiexd"></div>
       <div class="newlogin">
@@ -1202,11 +1201,11 @@
             <div class="login-way db">
               <div class="setting settinguser pl15 flex flex-ac">
                 <span class="pr10"></span>
-                <input type="text" placeholder="请输入手机号/账号" class="it1">
+                <input id="logtel" type="text" placeholder="请输入手机号/账号" class="it1">
               </div>
               <div class="setting settingpw pl15 flex flex-ac">
                 <span class="pr10"></span>
-                <input type="password" value="" maxlength="20" placeholder="请输入密码" class="it1">
+                <input id="logpsw" type="password" maxlength="20" placeholder="请输入密码" class="it1">
                 <a href="https://passport.epet.com/retrieve_password.html?referer=" target="_blank"
                   class="ft14 ftc inputcode">
                   <span class="codevar c999">忘记密码</span>
@@ -1214,7 +1213,7 @@
               </div>
             </div>
           </div>
-          <div class="bindusergray cfff ft14 ftc mt20 codevar">登录</div>
+          <div id="loginbtn" class="bindusergray cfff ft14 ftc mt20 codevar">登录</div>
           <div class="otherlogin">
             <span class="loginstype">
               <a href="#" class="zhifubao"></a>
@@ -1238,16 +1237,15 @@
             <div class="login-way db">
               <div class="setting settinguser pl15 flex flex-ac">
                 <span class="pr10"></span>
-                <input type="text" placeholder="请输入手机号" maxlength="11" class="it1">
+                <input id="regtel" type="text" placeholder="请输入手机号" maxlength="11" class="it1">
               </div>
-              <div class="setting settingcode  pl15 flex flex-pj flex-ac rela">
-                <input type="text" placeholder="请输入短信验证码" maxlength="4" class="it1">
-                <a class="ft14 ftc inputcode"><span id="getcodes" class="codevar">获取验证码</span></a>
-                <div id="popup-captcha"></div>
+              <div class="setting settingpw  pl15 flex flex-pj flex-ac rela">
+                <span class="pr10"></span>
+                <input id="regpsw" type="password" maxlength="20" placeholder="请输入密码" class="it1">
               </div>
             </div>
           </div>
-          <div class="bindusergray cfff ft14 ftc mt20 codevar">注册</div>
+          <div class="bindusergray cfff ft14 ftc mt20 codevar" id="registerbtn">注册</div>
           <div class="otherlogin">
             <span class="que ido">
               <span class="dib fl argent_ico"></span>
@@ -1262,8 +1260,12 @@
 
     <div class="line2"></div>
 
+
+    <script src="js/sort.js"></script>
+    <script src="js/signin_up.js"></script>
     <script>
       const gototitle = document.querySelector('.gototitle')
+      const logininfo = document.getElementById('userinfo')
       const swt = document.querySelectorAll('.swt')
       const loginway = document.querySelectorAll('.login-way')
       const gotosign = document.getElementById('gotosign')
@@ -1305,7 +1307,7 @@
       }
 
     </script>
-    <script src="js/sort.js"></script>
+
   </header>
 
 
@@ -1415,9 +1417,11 @@
     <ul class="slider-up">
       <li class="item i-user">
         <a class="bg user w35" href="#"></a>
-        <div class="userbox">
-          <div style="text-align: center;color: #000;padding: 50px 0;">您还没有登录，请先<span
-              style="text-decoration: underline;color: red; cursor: pointer;">登录</span>。</div>
+        <div class="userbox" id="userbox">
+          <div style="text-align: center;color: #000;padding: 50px 0;">
+            您还没有登录，请先
+            <span style="text-decoration: underline;color: red; cursor: pointer;">登录</span>。
+          </div>
         </div>
       </li>
       <li class="item i-cart">
@@ -1462,6 +1466,50 @@
       </li>
     </ul>
   </div>
+
+  <script>
+    const userbox = document.getElementById('userbox')
+    function judeLogin() {
+      // console.log(sessionStorage.userinfo)
+
+      if (sessionStorage.userinfo !== undefined) {
+        let info = JSON.parse(sessionStorage.userinfo)
+        let li1 = document.createElement('li')
+        let li2 = document.createElement('li')
+        li1.innerHTML = `<span>${info.tel.replace(/(\d{3})\d{4}(\d{4})/, '$1****$2')}</span>`;
+        li2.innerHTML = `<span class="dcc" id="exitbtn">[退出]</span>`;
+
+        logininfo.replaceChild(li1, tologin)
+        logininfo.replaceChild(li2, toregister)
+
+        userbox.innerHTML = `<div class="bagp">
+            <a href="#" class="hd">
+              <img src="https://img2.epetbar.com/dogs/2.jpg" alt="ico">
+            </a>
+            <div class="baginfo">
+              <span>${info.name}</span>
+            </div>
+          </div>
+          <div class="epet-data">
+            <a href="#">
+              <img src="https://img2.epetbar.com/2016-01/09/22/255f31a872b759cca8ae513afc72fa88.jpg">
+            </a>
+            <div class="epet-name">
+              <a href="#">完善宠物资料</a>
+            </div>
+          </div>`
+
+
+        const exitbtn = document.getElementById('exitbtn')
+        exitbtn.onclick = function() {
+          sessionStorage.removeItem('userinfo')
+          window.location.href = 'head.html'
+        }
+
+      }
+    }
+    judeLogin()
+  </script>
 </body>
 
 </html>
