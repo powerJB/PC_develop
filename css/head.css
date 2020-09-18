@@ -236,6 +236,7 @@
 }
 .headerBot .head-bh .keywords .list {
   display: inline-block;
+  margin-top: 0!important;
 }
 .headerBot .head-bh .keywords .list li {
   display: inline-block;
@@ -327,15 +328,15 @@
   top: 34px;
   right: 0;
   width: 228px;
-  height: 360px;
-  display: none;
+  /* height: 360px; */
+  /* display: none; */
   z-index: 99;
 }
 .headerBot .head-bb .wr .catelist p {
-  height: 2px;
+  height: 3px;
 }
 .headerBot .head-bb .wr .dogtype {
-  height: 358px;
+  /* height: 358px; */
   background-color: #fff;
   position: relative;
 }
