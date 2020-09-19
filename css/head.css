@@ -986,6 +986,7 @@
 }
 .slider .item a {
   display: block;
+  position: relative;
 }
 
 
@@ -1130,5 +1131,63 @@
 }
 
 .slider .i-cart:hover .cartbox {
+  display: block;
+}
+
+
+.slider .slider-down .bg span {
+  display: none;
+  position: absolute;
+}
+.slider .slider-down .bg.app span {
+  background: url(https://static.epetbar.com/static_web/pc/dist/images/background/app_code.png?v=326) no-repeat;
+  width: 187px;
+  height: 231px;
+  bottom: -12px;
+  right: 28px;
+}
+.slider .slider-down .bg.wx span {
+  background: url(https://static.epetbar.com/static_web/pc/dist/images/background/weixin1.jpg?v=326) no-repeat;
+  width: 188px;
+  height: 228px;
+  bottom: 0;
+  right: 35px;
+  border: 1px #ddd solid;
+}
+.slider .slider-down .bg.wb span {
+  background: url(https://static.epetbar.com/static_web/pc/dist/images/background/weibo.jpg?v=326) no-repeat;
+  width: 188px;
+  height: 129px;
+  bottom: 0;
+  right: 35px;
+  border: 1px #ddd solid;
+}
+.slider .slider-down .top span {
+  height: 35px;
+  width: 90px;
+  line-height: 35px;
+  background-color: #FFA200;
+  position: absolute;
+  top: 0;
+  right: 35px;
+  text-align: center;
+  color: #FFF;
+  font-size: 12px;
+  padding-right: 10px;
+  display: none;
+}
+.slider .slider-down .top span::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: -8px;
+  top: 14px;
+  width: 0;
+  height: 0;
+  border: 4px solid #FFA200;
+  border-top-color: transparent;border-right-color: transparent;border-bottom-color: transparent;
+}
+
+.slider .slider-down .bg:hover span {
   display: block;
 }
