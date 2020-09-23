@@ -309,191 +309,6 @@
 
     <div class="line2"></div>
 
-
-    <script src="js/signin_up.js"></script>
-    <script src="./js/menus.js" ></script>
-
-    <!-- 菜单列表 -->
-    <script>
-      const foodbox = document.getElementById('food')
-      const snacksbox = document.getElementById('snacks')
-      const cushionbox = document.getElementById('cushion')
-      const toysbox = document.getElementById('toys')
-      const cleaningbox = document.getElementById('cleaning')
-      const healthbox = document.getElementById('health')
-      const nursingbox = document.getElementById('nursing')
-      const livebox = document.getElementById('live')
-      const dragbox = document.getElementById('drag')
-      const washbox = document.getElementById('wash')
-      const dressbox = document.getElementById('dress')
-      const cosmetbox = document.getElementById('cosmet')
-
-      let food = meunsArr[0];
-      let snacks = meunsArr[1];
-      let cushion = meunsArr[2];
-      let toys = meunsArr[3];
-      let cleaning = meunsArr[4];
-      let health = meunsArr[5];
-      let nursing = meunsArr[6];
-      let live = meunsArr[7];
-      let drag = meunsArr[8];
-      let wash = meunsArr[9];
-      let dress = meunsArr[10];
-      let cosmet = meunsArr[11];
-
-
-      function setData(data, box) {
-        // console.log(data)
-        let str = '';
-
-        str += `
-          <div class="ctitle">
-            <img src="${data.imgurl}"
-              alt="">
-            <a href="view/category.html?type_id=${data.id}">${data.title}</a>
-            <i></i>
-          </div>
-          <div class="dotline"></div>`;
-
-          for(let i = 0; i < data.child.length; i++) {
-            str += `
-              <div class="middle">
-                <div class="mid_head">
-                  <a href="view/category.html?type_sort_id=${data.child[i].id}">${data.child[i].title}</a>
-                  <img alt="7"
-                    src="${data.child[i].imgurl}">
-                </div>
-                <div class="mid_list">`
-                
-                for(let j = 0; j < data.child[i].children.length; j++) {
-                  str += `<a href="view/category.html?type_sort_id=${data.child[i].id}&lab=${data.child[i].children[j]}">${data.child[i].children[j]}</a>`
-                }
-                
-                str += `
-                      </div>
-                    </div>
-                  <div class="dotline"></div>`
-          }
-        
-        box.innerHTML = str;
-      }
-      setData(food, foodbox)
-      setData(snacks, snacksbox)
-      setData(cushion, cushionbox)
-      setData(toys, toysbox)
-      setData(cleaning, cleaningbox)
-      setData(health, healthbox)
-      setData(nursing, nursingbox)
-      setData(live, livebox)
-      setData(drag, dragbox)
-      setData(wash, washbox)
-      setData(dress, dressbox)
-      setData(cosmet, cosmetbox)
-
-    </script>
-
-    <!-- 搜索 -->
-    <script>
-      const sipt = document.getElementById('search-ipt')
-      const sbtn = document.getElementById('search-btn')
-      const slist = document.getElementById('search-list')
-
-      // 节流
-      let pass = false;
-      sipt.oninput = function() {
-        if (pass) return 
-
-        pass = true 
-
-        setTimeout(() => {
-          // console.log(sipt.value)
-          if(sipt.value) {
-            search(sipt.value)
-          }else {
-            slist.style.display = 'none'
-          }
-          pass = false
-        }, 800)
-      }
-
-      function search(keyword) {
-        let str = ''
-        fetch('http://localhost:8080/search?keyword=' + keyword)
-          .then(response => {
-            return response.json()
-          })
-          .then(res => {
-            if(res.data.length) {
-              console.log(res.data)
-              for(let i = 0; i < res.data.length; i++) {
-                str += `
-                  <li class="item"><a href="./view/detail.html?id=${res.data[i].id}">${res.data[i].subject}</a></li>
-                `
-              }
-              slist.innerHTML = str
-              slist.style.display = 'block'
-            }else {
-              slist.innerHTML = null
-              slist.style.display = 'none'
-            }
-          })
-      }
-
-      sbtn.onclick = function() {
-        let keyword = sipt.value
-        // console.log(keyword)
-
-        window.location.href = 'view/category.html?keyword=' + keyword;
-      }
-
-    </script>
-
-    <script>
-      
-      const gototitle = document.querySelector('.gototitle')
-      const logininfo = document.getElementById('userinfo')
-      const swt = document.querySelectorAll('.swt')
-      const loginway = document.querySelectorAll('.login-way')
-      const gotosign = document.getElementById('gotosign')
-      const signin = document.getElementById('signin')
-      const signup = document.getElementById('signup')
-      const tologin = document.getElementById('tologin')
-      const toregister = document.getElementById('toregister')
-      const newlogin = document.getElementById('newlogin')
-      const fiexd = document.getElementById('fiexd')
-
-
-      tologin.onclick = function() {
-        newlogin.style.display = "block"
-        signin.classList.add('sign')
-        signup.classList.remove('sign')
-      }
-      toregister.onclick = function() {
-        newlogin.style.display = "block"
-        signup.classList.add('sign')
-        signin.classList.remove('sign')
-      }
-      fiexd.onclick = function() {
-        newlogin.style.display = "none"
-      }
-
-      gototitle.onclick = function (e) {
-        let a = e.target.dataset.i
-        for (let i = 0; i < swt.length; i++) {
-          swt[i].classList.remove('cf0')
-          loginway[i].classList.remove('db')
-        }
-        swt[a].classList.add('cf0');
-        loginway[a].classList.add('db');
-      }
-
-      gotosign.onclick = function() {
-        signin.classList.add('sign')
-        signup.classList.remove('sign')
-      }
-
-    </script>
-
   </header>
 
 
@@ -843,6 +658,191 @@
     </div>
   </slider>
 
+
+  
+  <script src="js/signin_up.js"></script>
+  <script src="./js/menus.js" ></script>
+
+  <!-- 菜单列表 -->
+  <script>
+    const foodbox = document.getElementById('food')
+    const snacksbox = document.getElementById('snacks')
+    const cushionbox = document.getElementById('cushion')
+    const toysbox = document.getElementById('toys')
+    const cleaningbox = document.getElementById('cleaning')
+    const healthbox = document.getElementById('health')
+    const nursingbox = document.getElementById('nursing')
+    const livebox = document.getElementById('live')
+    const dragbox = document.getElementById('drag')
+    const washbox = document.getElementById('wash')
+    const dressbox = document.getElementById('dress')
+    const cosmetbox = document.getElementById('cosmet')
+
+    let food = meunsArr[0];
+    let snacks = meunsArr[1];
+    let cushion = meunsArr[2];
+    let toys = meunsArr[3];
+    let cleaning = meunsArr[4];
+    let health = meunsArr[5];
+    let nursing = meunsArr[6];
+    let live = meunsArr[7];
+    let drag = meunsArr[8];
+    let wash = meunsArr[9];
+    let dress = meunsArr[10];
+    let cosmet = meunsArr[11];
+
+
+    function setData(data, box) {
+      // console.log(data)
+      let str = '';
+
+      str += `
+        <div class="ctitle">
+          <img src="${data.imgurl}"
+            alt="">
+          <a href="view/category.html?type_id=${data.id}">${data.title}</a>
+          <i></i>
+        </div>
+        <div class="dotline"></div>`;
+
+        for(let i = 0; i < data.child.length; i++) {
+          str += `
+            <div class="middle">
+              <div class="mid_head">
+                <a href="view/category.html?type_sort_id=${data.child[i].id}">${data.child[i].title}</a>
+                <img alt="7"
+                  src="${data.child[i].imgurl}">
+              </div>
+              <div class="mid_list">`
+              
+              for(let j = 0; j < data.child[i].children.length; j++) {
+                str += `<a href="view/category.html?type_sort_id=${data.child[i].id}&lab=${data.child[i].children[j]}">${data.child[i].children[j]}</a>`
+              }
+              
+              str += `
+                    </div>
+                  </div>
+                <div class="dotline"></div>`
+        }
+      
+      box.innerHTML = str;
+    }
+    setData(food, foodbox)
+    setData(snacks, snacksbox)
+    setData(cushion, cushionbox)
+    setData(toys, toysbox)
+    setData(cleaning, cleaningbox)
+    setData(health, healthbox)
+    setData(nursing, nursingbox)
+    setData(live, livebox)
+    setData(drag, dragbox)
+    setData(wash, washbox)
+    setData(dress, dressbox)
+    setData(cosmet, cosmetbox)
+
+  </script>
+
+  <!-- 搜索 -->
+  <script>
+    const sipt = document.getElementById('search-ipt')
+    const sbtn = document.getElementById('search-btn')
+    const slist = document.getElementById('search-list')
+
+    // 节流
+    let pass = false;
+    sipt.oninput = function() {
+      if (pass) return 
+
+      pass = true 
+
+      setTimeout(() => {
+        // console.log(sipt.value)
+        if(sipt.value) {
+          search(sipt.value)
+        }else {
+          slist.style.display = 'none'
+        }
+        pass = false
+      }, 800)
+    }
+
+    function search(keyword) {
+      let str = ''
+      fetch('http://localhost:8080/search?keyword=' + keyword)
+        .then(response => {
+          return response.json()
+        })
+        .then(res => {
+          if(res.data.length) {
+            console.log(res.data)
+            for(let i = 0; i < res.data.length; i++) {
+              str += `
+                <li class="item"><a href="./view/detail.html?id=${res.data[i].id}">${res.data[i].subject}</a></li>
+              `
+            }
+            slist.innerHTML = str
+            slist.style.display = 'block'
+          }else {
+            slist.innerHTML = null
+            slist.style.display = 'none'
+          }
+        })
+    }
+
+    sbtn.onclick = function() {
+      let keyword = sipt.value
+      // console.log(keyword)
+
+      window.location.href = 'view/category.html?keyword=' + keyword;
+    }
+
+  </script>
+
+  <script>
+    
+    const gototitle = document.querySelector('.gototitle')
+    const logininfo = document.getElementById('userinfo')
+    const swt = document.querySelectorAll('.swt')
+    const loginway = document.querySelectorAll('.login-way')
+    const gotosign = document.getElementById('gotosign')
+    const signin = document.getElementById('signin')
+    const signup = document.getElementById('signup')
+    const tologin = document.getElementById('tologin')
+    const toregister = document.getElementById('toregister')
+    const newlogin = document.getElementById('newlogin')
+    const fiexd = document.getElementById('fiexd')
+
+
+    tologin.onclick = function() {
+      newlogin.style.display = "block"
+      signin.classList.add('sign')
+      signup.classList.remove('sign')
+    }
+    toregister.onclick = function() {
+      newlogin.style.display = "block"
+      signup.classList.add('sign')
+      signin.classList.remove('sign')
+    }
+    fiexd.onclick = function() {
+      newlogin.style.display = "none"
+    }
+
+    gototitle.onclick = function (e) {
+      let a = e.target.dataset.i
+      for (let i = 0; i < swt.length; i++) {
+        swt[i].classList.remove('cf0')
+        loginway[i].classList.remove('db')
+      }
+      swt[a].classList.add('cf0');
+      loginway[a].classList.add('db');
+    }
+
+    gotosign.onclick = function() {
+      signin.classList.add('sign')
+      signup.classList.remove('sign')
+    }
+
+  </script>
 
   <!-- 登录 -->
   <script>
