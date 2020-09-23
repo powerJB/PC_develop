@@ -5,6 +5,7 @@
 }
 .header {
   width: 100%;
+  background-color: #fff;
 }
 
 .headerTop {
@@ -813,6 +814,9 @@
 
 
 /* footer -- start */
+.footer {
+  background-color: #f5f5f5;
+}
 .foot-top {
   border-bottom: 1px solid #e5e5e5;
 }
