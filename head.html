@@ -27,7 +27,7 @@
           <li class="dcc" id="tologin">[登陆]</li>
           <li class="dcc" id="toregister">[注册]</li>
           <li class="cart-t">
-            <i></i><a href="#">购物车(<em id="cart-num">0</em>)</a>
+            <i></i><a href="view/cart.html">购物车(<em id="cart-num1">0</em>)</a>
           </li>
           <li class="my collect topgz dcc">
             <i></i><span>我的E宠</span><b></b>
@@ -62,25 +62,26 @@
           </div>
           <div class="search">
             <div class="search-t">
-              <input type="text" placeholder="纽萃宝"><span class="btn">搜索</span>
+              <input id="search-ipt" type="text" placeholder="纽萃宝"><span id="search-btn" class="btn">搜索</span>
             </div>
+            <ul class="search-list" id="search-list"></ul>
             <div class="keywords">
               <label>热门搜索：</label>
               <ul class="list">
-                <li class="item cred">伯纳天纯</li>
+                <li class="item cred"><a href="view/category.html?type_sort_id=2&lab=金毛犬粮">金毛犬粮</a></li>
                 <li class="stp">|</li>
-                <li class="item">冠能</li>
+                <li class="item"><a href="view/category.html?type_sort_id=3&lab=饼干">饼干</a></li>
                 <li class="stp">|</li>
-                <li class="item">粑粑抓</li>
+                <li class="item"><a href="view/category.html?type_sort_id=3&lab=牛肉冻干">牛肉冻干</a></li>
                 <li class="stp">|</li>
-                <li class="item">小青鲨</li>
+                <li class="item"><a href="view/category.html?type_sort_id=6&lab=蛋糕">蛋糕</a></li>
                 <li class="stp">|</li>
-                <li class="item">智能喂食</li>
+                <li class="item"><a href="view/category.html?type_sort_id=7&lab=罐头">罐头</a></li>
               </ul>
             </div>
           </div>
           <div class="cart">
-            <a href="#">购物车(<em id="cart-num">0</em>)</a>
+            <a href="view/cart.html">购物车(<em id="cart-num2">0</em>)</a>
           </div>
         </div>
       </div>
@@ -93,16 +94,16 @@
                 <p></p>
                 <ul class="dogtype" id="dogtype">
                   <li class="dog-item" data-i="1">
-                    <a href="#">主粮</a>
-                    <a href="#">零食</a>
+                    <a href="view/category.html?type_id=1">主粮</a>
+                    <a href="view/category.html?type_id=2">零食</a>
                     <!-- 菜单 -->
                     <div class="nav-menu">
                       <div class="mincate" id="food"></div>
                       <div class="mincate" id="snacks"></div>
                   </li>
                   <li class="dog-item" data-i="2">
-                    <a href="#">窝垫</a>
-                    <a href="#">玩具</a>
+                    <a href="view/category.html?type_id=3">窝垫</a>
+                    <a href="view/category.html?type_id=4">玩具</a>
                     <!-- 菜单 -->
                     <div class="nav-menu">
                       <div class="mincate" id="cushion"></div>
@@ -110,8 +111,8 @@
                     </div>
                   </li>
                   <li class="dog-item" data-i="3">
-                    <a href="#">清洁</a>
-                    <a href="#">保健</a>
+                    <a href="view/category.html?type_id=5">清洁</a>
+                    <a href="view/category.html?type_id=6">保健</a>
                     <!-- 菜单 -->
                     <div class="nav-menu">
                       <div class="mincate" id="cleaning"></div>
@@ -119,8 +120,8 @@
                     </div>
                   </li>
                   <li class="dog-item" data-i="4">
-                    <a href="#">护理</a>
-                    <a href="#">生活</a>
+                    <a href="view/category.html?type_id=7">护理</a>
+                    <a href="view/category.html?type_id=8">生活</a>
                     <!-- 菜单 -->
                     <div class="nav-menu">
                       <div class="mincate" id="nursing"></div>
@@ -128,8 +129,8 @@
                     </div>
                   </li>
                   <li class="dog-item" data-i="5">
-                    <a href="#">牵引</a>
-                    <a href="#">洗澡</a>
+                    <a href="view/category.html?type_id=9">牵引</a>
+                    <a href="view/category.html?type_id=10">洗澡</a>
                     <!-- 菜单 -->
                     <div class="nav-menu">
                       <div class="mincate" id="drag"></div>
@@ -137,8 +138,8 @@
                     </div>
                   </li>
                   <li class="dog-item" data-i="6">
-                    <a href="#">服饰</a>
-                    <a href="#">美容</a>
+                    <a href="view/category.html?type_id=11">服饰</a>
+                    <a href="view/category.html?type_id=12">美容</a>
                     <!-- 菜单 -->
                     <div class="nav-menu">
                       <div class="mincate" id="dress"></div>
@@ -183,37 +184,37 @@
               <a href="http://www.epetht.com" target="_blank"><img src="https://static.epetbar.com/static_www/www/images/epethk-logo.png" alt=""></a>
             </li>
             <li class="nav-item">
-              <a href="brand.html" target="_blank">
+              <a href="view/brand.html" target="_blank">
                 <b></b>
                 <sapn>品牌特卖</sapn>
               </a>
             </li>
             <li class="nav-item">
-              <a href="popular.html" target="_blank">
+              <a href="view/popular.html" target="_blank">
                 <b></b>
                 <sapn>潮品视频</sapn>
               </a>
             </li>
             <li class="nav-item">
-              <a href="theatre.html" target="_blank">
+              <a href="view/theatre.html" target="_blank">
                 <b></b>
                 <sapn>小剧场</sapn>
               </a>
             </li>
             <li class="nav-item">
-              <a href="classroom.html" target="_blank">
+              <a href="view/classroom.html" target="_blank">
                 <b></b>
                 <sapn>E宠课堂</sapn>
               </a>
             </li>
             <li class="nav-item">
-              <a href="union.html" target="_blank">
+              <a href="view/union.html" target="_blank">
                 <b></b>
                 <sapn>猫爪联盟</sapn>
               </a>
             </li>
             <li class="nav-item">
-              <a href="special.html" target="_blank">
+              <a href="view/special.html" target="_blank">
                 <b></b>
                 <sapn>清仓特价</sapn>
               </a>
@@ -309,12 +310,10 @@
     <div class="line2"></div>
 
 
-    <!-- <script src="js/sort.js"></script> -->
     <script src="js/signin_up.js"></script>
     <script src="./js/menus.js" ></script>
 
     <!-- 菜单列表 -->
-
     <script>
       const foodbox = document.getElementById('food')
       const snacksbox = document.getElementById('snacks')
@@ -351,7 +350,7 @@
           <div class="ctitle">
             <img src="${data.imgurl}"
               alt="">
-            <a href="#">${data.title}</a>
+            <a href="view/category.html?type_id=${data.id}">${data.title}</a>
             <i></i>
           </div>
           <div class="dotline"></div>`;
@@ -360,14 +359,14 @@
             str += `
               <div class="middle">
                 <div class="mid_head">
-                  <a href="#">${data.child[i].title}</a>
+                  <a href="view/category.html?type_sort_id=${data.child[i].id}">${data.child[i].title}</a>
                   <img alt="7"
                     src="${data.child[i].imgurl}">
                 </div>
                 <div class="mid_list">`
                 
                 for(let j = 0; j < data.child[i].children.length; j++) {
-                  str += `<a href="#">${data.child[i].children[j]}</a>`
+                  str += `<a href="view/category.html?type_sort_id=${data.child[i].id}&lab=${data.child[i].children[j]}">${data.child[i].children[j]}</a>`
                 }
                 
                 str += `
@@ -390,6 +389,62 @@
       setData(wash, washbox)
       setData(dress, dressbox)
       setData(cosmet, cosmetbox)
+
+    </script>
+
+    <!-- 搜索 -->
+    <script>
+      const sipt = document.getElementById('search-ipt')
+      const sbtn = document.getElementById('search-btn')
+      const slist = document.getElementById('search-list')
+
+      // 节流
+      let pass = false;
+      sipt.oninput = function() {
+        if (pass) return 
+
+        pass = true 
+
+        setTimeout(() => {
+          // console.log(sipt.value)
+          if(sipt.value) {
+            search(sipt.value)
+          }else {
+            slist.style.display = 'none'
+          }
+          pass = false
+        }, 800)
+      }
+
+      function search(keyword) {
+        let str = ''
+        fetch('http://localhost:8080/search?keyword=' + keyword)
+          .then(response => {
+            return response.json()
+          })
+          .then(res => {
+            if(res.data.length) {
+              console.log(res.data)
+              for(let i = 0; i < res.data.length; i++) {
+                str += `
+                  <li class="item"><a href="./view/detail.html?id=${res.data[i].id}">${res.data[i].subject}</a></li>
+                `
+              }
+              slist.innerHTML = str
+              slist.style.display = 'block'
+            }else {
+              slist.innerHTML = null
+              slist.style.display = 'none'
+            }
+          })
+      }
+
+      sbtn.onclick = function() {
+        let keyword = sipt.value
+        // console.log(keyword)
+
+        window.location.href = 'view/category.html?keyword=' + keyword;
+      }
 
     </script>
 
@@ -679,14 +734,13 @@
     </div>
   </footer>
 
-  <div class="slider">
+  <slider class="slider">
     <ul class="slider-up">
       <li class="item i-user">
         <a class="bg user w35" href="#"></a>
         <div class="userbox" id="userbox">
           <div style="text-align: center;color: #000;padding: 50px 0;">
-            您还没有登录，请先
-            <span style="text-decoration: underline;color: red; cursor: pointer;">登录</span>。
+            您还没有登录，请先登录。
           </div>
         </div>
       </li>
@@ -694,15 +748,14 @@
         <a class="cart" href="#">
           <span class="bg w35"></span>
           <div class="cart-num">
-            购物车<span>0</span>
+            购物车<span id="cart-num3">0</span>
           </div>
         </a>
-        <div class="cartbox">
-          <div style="text-align: center; color: #000;margin-bottom: 20px; font-weight: 600; font-size: 14px;">
-            您的购物车中暂无商品，赶快选择心爱的商品吧！</div>
+        <div class="cartbox" id="cartbox">
+          <div style="text-align: center; color: #000;margin-bottom: 20px; font-weight: 600; font-size: 14px;">您的购物车中暂无商品，赶快选择心爱的商品吧！</div>
         </div>
       </li>
-      <li class="item">
+      <li class="item i-kefu" id="kefu">
         <a class="cart serve" href="#">
           <span class="bg w35"></span>
           <div class="cart-num">
@@ -734,21 +787,78 @@
         </a>
       </li>
       <li class="item btop">
-        <a class="bg view w35 top" href="#">
+        <a id="toTop" class="bg view w35 top" href="#">
           <span>返回顶部</span>
         </a>
       </li>
     </ul>
-  </div>
+
+    <!-- 客服 -->
+    <div class="kf-body" id="kf-body">
+      <div class="body-hd">
+        <div class="body-hd-l">
+          <img src="https://ysf.nosdn.127.net/E7555429A803B5C02803F7AF8C204467?imageView&type=png%7CimageView&thumbnail=76y76&axis=5" alt="">
+          <span>机器人小E</span>
+        </div>
+        <div class="body-hd-r">
+          <div class="minimize" id="minimize">
+            <i></i>
+          </div>
+        </div>
+      </div>
+      <ul class="body-md" id="msgbox">
+        <h3 class="sys-info">客服 机器人小E 为您服务</h3>
+        <div class="msg msg-l">
+          <div class="msg-main">
+            <p>您好，我是机器人客服，请问有什么可以帮您？</p>
+            <p><br></p>
+            <p><span style="color: rgb(17, 31, 44);"><span style="font-size: 14px;">猫砂限时单件包邮活动开启啦~</span></span></p>
+            <p><span style="color: rgb(17, 31, 44);"><span style="font-size: 14px;">目前全国大部分地区均可包邮，部分猫砂需要手动选择百世快递</span></span></p>
+            <p><span style="color: rgb(17, 31, 44);"><span style="font-size: 14px;">活动传送门：</span></span><a target="_blank" href="https://wap.epet.com/app/orderTopic/1436" style="color: var(--common_blue1_color,#0089ff); background-color: rgb(255, 255, 255);"><span>https://wap.epet.com/app/orderTopic/1436</span></a></p>
+            <p><span style="color: rgb(17, 31, 44);"><span style="font-size: 14px;">近30日火爆单品：</span></span></p>
+            <p><span style="color: rgb(17, 31, 44);"><span style="font-size: 14px;">俏尾巴混合砂  买组合三件可赠30元巅峰券包</span></span></p>
+            <p><span style="color: rgb(17, 31, 44);"><span style="font-size: 14px;">券包由10元无门槛+99-20元指定猫罐券组成</span></span></p>
+          </div>
+        </div>
+        <div class="msg msg-l">
+          <div class="msg-main">
+            <div class="qa_label">机器人小E可以回答您！</div>
+            <ul>
+              <li><a>猫砂包邮限时活动？</a></li>
+              <li><a>什么时候发货</a></li>
+              <li><a>退款什么时候到账？</a></li>
+              <li><a>罐头可以保存多久？</a></li>
+              <li><a>宠物多久驱一次虫？</a></li>
+              <li><a>福来恩滴剂怎么用</a></li>
+              <li><a>怎么给宠物换粮？</a></li>
+              <li><a>如何联系人工客服？</a></li>
+            </ul> 
+          </div>
+        </div>
+      </ul>
+      <div class="body-bd">
+        <textarea id="msgipt" placeholder="输入消息..."></textarea>
+        <span class="send-btn" id="sendbtn">发送</span>
+      </div>
+    </div>
+  </slider>
 
 
+  <!-- 登录 -->
   <script>
     const userbox = document.getElementById('userbox')
-    function judeLogin() {
-      // console.log(sessionStorage.userinfo)
+    const cartbox = document.getElementById('cartbox')
+    const cartnum1 = document.getElementById('cart-num1')
+    const cartnum2 = document.getElementById('cart-num2')
+    const cartnum3 = document.getElementById('cart-num3')
+    let info
 
-      if (sessionStorage.userinfo !== undefined) {
-        let info = JSON.parse(sessionStorage.userinfo)
+    // 判断是否登录
+    function judeLogin() {
+      // console.log(localStorage.userinfo)
+
+      if (localStorage.userinfo !== undefined) {
+        info = JSON.parse(localStorage.userinfo)
         let li1 = document.createElement('li')
         let li2 = document.createElement('li')
         li1.innerHTML = `<span>${info.tel.replace(/(\d{3})\d{4}(\d{4})/, '$1****$2')}</span>`;
@@ -777,13 +887,158 @@
 
         const exitbtn = document.getElementById('exitbtn')
         exitbtn.onclick = function() {
-          sessionStorage.removeItem('userinfo')
-          window.location.href = 'head.html'
+          localStorage.removeItem('userinfo')
+          window.location.href = 'index.html'
         }
+
+        getCart(info.tel)
 
       }
     }
     judeLogin()
+
+    // 获取购物车信息
+    function getCart(tel) {
+      fetch('http://localhost:8080/cart?user_tel=' + tel)
+      .then(response => {
+        return response.json()
+      })
+      .then(res => {
+        // console.log(res.data)
+        let str = ''
+        let cartnum = 0
+
+        if(res.data.length) {
+          let result = res.data
+          cartnum = result.length
+
+          let total = 0;
+          str = '<ul class="cart-list">'
+          for(let i = 0; i< result.length; i++) {
+            total += result[i].youhui_price*result[i].gnum;
+            str += `
+              <li class="cart-item">
+                <div class="img">
+                  <img src="${result[i].imgurl}" alt="">
+                </div>
+                <div class="info">
+                  <p>
+                    <a href="#">
+                      ${result[i].subject}
+                      <em>${result[i].formats?result[i].formats:''}</em>
+                    </a>
+                  </p>
+                  <p>
+                    <span style="color: red;">￥${result[i].youhui_price} × ${result[i].gnum}</span>
+                  </p>
+                  <div class="remove">
+                    <span onclick="removeCart(${result[i].id})">[删除]</span>
+                  </div>
+                </div>
+              </li>`
+          }
+          str += `</ul>
+            <div class="cart-btn">
+              <div>共<span> ${cartnum} </span>件商品 合计：<span>￥${total}</span></div>
+              <div><a class="btn btn_clear" onclick="clearAll(info.tel)">清空</a><a class="btn">去结算</a></div>
+            </div>`
+        }else {
+          str = `<div style="text-align: center; color: #000;margin-bottom: 20px; font-weight: 600; font-size: 14px;">您的购物车中暂无商品，赶快选择心爱的商品吧！</div>`
+          cartnum = 0
+        }
+        cartnum1.innerHTML = cartnum
+        cartnum2.innerHTML = cartnum
+        cartnum3.innerHTML = cartnum
+        cartbox.innerHTML = str
+      })
+    }
+
+    // 删除购物车列表
+    function removeCart(id) {
+      fetch('http://localhost:8080/delcart?id=' + id)
+      .then(response => {
+        return response.json()
+      })
+      .then(res => {
+        // console.log(res.message)
+        if(res.message == '删除成功！') {
+          getCart(info.tel)
+        }
+      })
+    }
+
+    // 清空购物车
+    function clearAll(tel) {
+      fetch('http://localhost:8080/clecart?tel=' + tel)
+      .then(response => {
+        return response.json()
+      })
+      .then(res => {
+        // console.log(res.message)
+        if(res.message == '删除成功！') {
+          getCart(info.tel)
+        }
+      })
+    }
+  </script>
+
+  <!-- 客服 回顶 -->
+  <script>
+    const kefu = document.getElementById('kefu')
+    const minimize = document.getElementById('minimize')
+    const kf_body = document.getElementById('kf-body')
+    const msgbox = document.getElementById('msgbox')
+    const msgipt = document.getElementById('msgipt')
+    const sendbtn = document.getElementById('sendbtn')
+
+    kefu.onclick = function() {
+      kf_body.style.display = 'block'
+    }
+
+    minimize.onclick = function(e) {
+      e.stopPropagation()
+      kf_body.style.display = 'none'
+    }
+
+    msgipt.oninput = function() {
+      let ipt = msgipt.value;
+      if(ipt.length>0){
+        sendbtn.style.opacity = 1
+        sendbtn.onclick = sendMsg
+      }else {
+        sendbtn.style.opacity = .6
+        sendbtn.onclick = null;
+      }
+    }
+
+    function sendMsg() {
+      let ipt = msgipt.value;
+
+      let p = document.createElement('div')
+      p.className = ('msg msg-r')
+      p.innerHTML = `
+          <div class="msg-main">
+            <p>${ipt}</p>
+          </div>`
+      msgbox.appendChild(p)
+      msgbox.scrollTop=msgbox.scrollHeight  //滚动条置底
+      msgipt.value = null
+    }
+
+
+    // 回顶部
+    const toTop = document.getElementById('toTop')
+    window.onscroll = function() {
+      if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        toTop.classList.add('on')
+      }else {
+        toTop.classList.remove('on')
+      }
+    }
+    toTop.onclick = function() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0
+    }
   </script>
 </body>
 

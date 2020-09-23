@@ -25,17 +25,6 @@ window.onload = function() {
     let psw = regpsw.value;
     // console.log(tel, psw)
 
-    // let str = '主人_';
-    // for(let i = 0; i < 10; i++) {
-    //   str += arr[parseInt(Math.random()*62)]+'';
-    // }
-    // let info = {
-    //   tel: tel,
-    //   name: str
-    // }
-    // sessionStorage.userinfo = JSON.stringify(info)
-    // console.log(JSON.parse(a).tel)
-
     if(tel == '') {
       alert('请输入手机号！')
       return
@@ -77,7 +66,7 @@ window.onload = function() {
                 tel: tel,
                 name: name
               }
-              sessionStorage.userinfo = JSON.stringify(info)
+              localStorage.userinfo = JSON.stringify(info)
               window.location.href = 'head.html'
             }
           })
@@ -148,7 +137,7 @@ window.onload = function() {
               tel: result[0].tel,
               name: result[0].username
             }
-            sessionStorage.userinfo = JSON.stringify(info)
+            localStorage.userinfo = JSON.stringify(info)
             window.location.href = 'head.html'
           }
         }
