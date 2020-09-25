@@ -38,7 +38,7 @@ window.onload = function() {
       alert('字母开头，6-12位数字和字母组合')
       return
     }else {
-      fetch('http://localhost:8080/judge?tel=' + tel)
+      fetch('http://localhost:3000/judge?tel=' + tel)
       .then(response => {
         return response.json()
       })
@@ -56,7 +56,7 @@ window.onload = function() {
           }
           // console.log(str)
 
-          fetch('http://localhost:8080/register?tel=' + tel + '&psw=' + psw + '&name=' + str)
+          fetch('http://localhost:3000/register?tel=' + tel + '&psw=' + psw + '&name=' + str)
           .then(response => {
             return response.json()
           })
@@ -67,7 +67,7 @@ window.onload = function() {
                 name: name
               }
               localStorage.userinfo = JSON.stringify(info)
-              window.location.href = 'head.html'
+              window.location.reload()
             }
           })
           .catch(err => {
@@ -120,7 +120,7 @@ window.onload = function() {
       alert('字母开头，6-12位数字和字母组合')
       return
     }else {
-      fetch('http://localhost:8080/judge?tel=' + tel)
+      fetch('http://localhost:3000/judge?tel=' + tel)
       .then(response => {
         return response.json();
       })
@@ -138,7 +138,7 @@ window.onload = function() {
               name: result[0].username
             }
             localStorage.userinfo = JSON.stringify(info)
-            window.location.href = 'head.html'
+            window.location.reload()
           }
         }
       })

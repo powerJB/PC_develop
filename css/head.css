@@ -32,7 +32,108 @@
   font-size: 12px;
   line-height: 28px;
   color: #444444;
+  position: relative;
 }
+
+
+.head-hl .region b {
+  display: block;
+  top: 8px;
+  right: 0px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background: url(https://static.epetbar.com/static_web/pc/dist/images/background/xqico.png) no-repeat;
+  background-position: -3px -30px;
+}
+
+.region:hover .region_box{
+	display: block;
+}
+.region:hover .region_text>.iconfont{
+	display: inline-block;
+	transform: rotate(180deg);
+}
+.region_box{
+	width: 400px;
+	height: 300px;
+  display: inline-block;
+  border: 1px solid #ddd;
+	padding: 10px;
+	background: #fff;
+	position: absolute;
+	top: 28px;
+  left: -1px;
+  line-height: 12px;
+	display: none;
+}
+.region_text>span{
+	vertical-align: middle;
+}
+
+.i_box{
+	color: #999;
+}
+.i_box>li{
+	margin: 11px 5px;
+  padding: 5px 8px;
+  cursor: text;
+}
+.t{
+	display: flex;
+}
+.i_box_a,.b_box{
+	display: flex;
+	margin: 11px 5px;
+	flex-wrap: wrap;
+}
+.i_box_a>li,.b_box>li{
+
+	padding: 5px 8px;
+	margin-right: 10px	;
+}
+.i_box_a>li:hover{
+	background-color: #ff6700;
+	color: #fff;
+}
+.b_box>li:hover{
+	background-color: #ff6700;
+	color: #fff;
+}
+.i_box_a>.active,.b_box>.active{
+	background-color: #ff6700;
+	color: #fff;	
+}
+.region_tab{
+	display: flex;
+	margin-left: 5px;
+	border-bottom:1px solid #eee;
+
+}
+.region_tab>li{
+	padding: 8px 15px;
+	margin-right: 2px;
+	border:1px solid #eee;
+	border-bottom: 0px;
+	margin-bottom: -1px;
+	background-color: #f6f6f6;
+}
+.region_tab>.a_itme{
+	background-color: #FFF;
+}
+.b_itme{
+	display: none;
+}
+.b_box>li{
+	margin: 5px 5px;
+}
+
+
+
+
+
+
+
 
 .head-hl .hl-brand {
   padding: 0 5px;
@@ -372,7 +473,7 @@
   width: 228px;
   /* height: 360px; */
   /* display: none; */
-  z-index: 99;
+  z-index: 9;
 }
 .headerBot .head-bb .wr .catelist p {
   height: 3px;

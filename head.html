@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>[E宠商城]</title>
-  <script src="js/vue.js"></script>
+  <script src="js/area.js"></script>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/head.css">
   <link rel="stylesheet" href="css/index.css">
@@ -20,7 +20,34 @@
             <a href="index.html" class="epet-brand dcc">E宠首页</a>
           </li>
           <li class="hl-item place-send">送至：</li>
-          <li class="hl-item place-str c66">河南</li>
+          <li class="hl-item place-str c66 region">
+            <span class="text_c">河南</span>
+            <b></b>
+            <div class="region_box">
+              <ul class="region_tab">
+                <li class="a_itme">请选择</li>
+                <li class="b_itme">请选择</li>
+              </ul>
+              <div>
+                <div class="t">
+                  <ul class="i_box"></ul>
+                  <div class="pp">
+                    <ul class="i_box_a"></ul>
+                    <ul class="i_box_a"></ul>
+                    <ul class="i_box_a"></ul>
+                    <ul class="i_box_a"></ul>
+                    <ul class="i_box_a"></ul>
+                    <ul class="i_box_a"></ul>
+                    <ul class="i_box_a"></ul>
+                    <ul class="i_box_a"></ul>
+                  </div>
+                </div>
+                <ul class="a_box"></ul>
+                <ul class="b_box"></ul>
+                <ul class="c_box"></ul>
+              </div>
+            </div>
+          </li>
           <li class="hl-item epetbrand c66">E宠就是正品</li>
         </ul>
         <ul class="head-hr" id="userinfo">
@@ -663,6 +690,131 @@
   <script src="js/signin_up.js"></script>
   <script src="./js/menus.js" ></script>
 
+  <script>
+
+    var region_tab = document.querySelector('.region_tab')
+    var i_box_a = document.querySelectorAll('.i_box_a')
+    var a_itme = document.querySelector('.a_itme')
+    var b_itme = document.querySelector('.b_itme')
+    var c_itme = document.querySelector('.c_itme')
+    var a_box = document.querySelector('.a_box')
+    var b_box = document.querySelector('.b_box')
+    var c_box = document.querySelector('.c_box')
+    var i_box = document.querySelector('.i_box')
+    var text_c=document.querySelector('.text_c')
+    var region_box=document.querySelector('.region_box')
+
+
+    //渲染一级标题
+    var s = r_data.map(val => {
+      return val.direction
+    })
+    //去重
+    var c = []
+    for (var i = 0; i < s.length; i++) {
+      if (c.indexOf(s[i]) == -1) {
+        c.push(s[i])
+      }
+    }
+    console.log(c)
+    var str = ''
+    c.forEach(val => {
+      str += `
+    <li>${val}：</li>
+    `
+    })
+    i_box.innerHTML = str
+    console.log(r_data)
+    //渲染一级标题
+
+    ra('西南')
+    ra('东北')
+    ra('华中')
+    ra('华南')
+    ra('西北')
+    ra('其他')
+    ra('华东')
+    ra('华北')
+    function ra(val) {
+      var str = ''
+      var a = c.indexOf(val)
+      var h = r_data.filter(itme => {
+        return itme.direction == val
+      })
+      for (var i = 0; i < h.length; i++) {
+        str += `
+        <li class="i_box_li" data-i=>${h[i].name}</li>
+        `
+      }
+      i_box_a[a].innerHTML = str
+      i_box_a[a].onclick = function (e) {
+        if (e.target.localName == 'li') {
+          var i_box_li = document.querySelectorAll('.i_box_li')
+          a_itme.innerHTML = e.target.innerHTML
+          for (var i = 0; i < 34; i++) {
+            i_box_li[i].classList.remove('active')
+          }
+          a_itme.style.backgroundColor="#f6f6f6"
+          e.target.classList.add('active')
+          b_itme.style.backgroundColor="#fff"
+          var text = e.target.innerHTML
+          var t = document.querySelector('.t')
+          t.style.display = 'none'
+          b_itme.style.display = "block"
+          b_box.style.display='block'
+          b_box.style.display='flex'
+          b_itme.innerHTML="请选择"
+          text_c.innerHTML=e.target.innerHTML
+          rb(text)
+        }
+      }
+    }
+
+    function rb(text) {
+      var s = r_data.filter(val => {
+        return val.name == text
+      })
+      var str = ''
+      for (var i = 0; i < s[0].city.length; i++) {
+        str += `
+        <li>${s[0].city[i].name} </li>
+        `
+      }
+      b_box.innerHTML = str
+      var b_box_li = document.querySelectorAll('.b_box>li')
+      b_box.onclick = function (e) {
+        if (e.target.localName == 'li') {
+          for (var i = 0; i < b_box_li.length; i++) {
+            b_box_li[i].classList.remove('active')
+          }
+          e.target.classList.add('active')
+          b_itme.innerHTML=e.target.innerHTML
+          region_box.style.display='none'
+        }
+      }
+    }
+    var region=document.querySelector('.region')
+    region.onmouseover=function(){
+      region_box.style.display='block'
+    }
+    region.onmouseout=function(){
+      region_box.style.display='none'
+    }
+    a_itme.onclick=function(){
+      var t=document.querySelector('.t')
+      t.style.display="block"
+      t.style.display="flex"
+      b_box.style.display='none'
+    }
+    b_itme.onclick=function(){
+      var t=document.querySelector('.t')
+      t.style.display="none"
+      b_box.style.display='block'
+      b_box.style.display='flex'
+    }
+
+  </script>
+
   <!-- 菜单列表 -->
   <script>
     const foodbox = document.getElementById('food')
@@ -768,7 +920,7 @@
 
     function search(keyword) {
       let str = ''
-      fetch('http://localhost:8080/search?keyword=' + keyword)
+      fetch('http://localhost:3000/search?keyword=' + keyword)
         .then(response => {
           return response.json()
         })
@@ -888,7 +1040,7 @@
         const exitbtn = document.getElementById('exitbtn')
         exitbtn.onclick = function() {
           localStorage.removeItem('userinfo')
-          window.location.href = 'index.html'
+          window.location.reload()
         }
 
         getCart(info.tel)
@@ -899,7 +1051,7 @@
 
     // 获取购物车信息
     function getCart(tel) {
-      fetch('http://localhost:8080/cart?user_tel=' + tel)
+      fetch('http://localhost:3000/cart?user_tel=' + tel)
       .then(response => {
         return response.json()
       })
@@ -955,7 +1107,7 @@
 
     // 删除购物车列表
     function removeCart(id) {
-      fetch('http://localhost:8080/delcart?id=' + id)
+      fetch('http://localhost:3000/delcart?id=' + id)
       .then(response => {
         return response.json()
       })
@@ -969,7 +1121,7 @@
 
     // 清空购物车
     function clearAll(tel) {
-      fetch('http://localhost:8080/clecart?tel=' + tel)
+      fetch('http://localhost:3000/clecart?tel=' + tel)
       .then(response => {
         return response.json()
       })
