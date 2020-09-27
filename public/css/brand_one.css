@@ -1,0 +1,268 @@
+.header{
+    background-color: #000;
+}
+.mainner_two{
+     width: 100%;
+     min-width: 1200px;
+}
+.brand_header{
+    width: 100%;
+    min-width: 1200px;
+}
+.brand_header img{
+    width: 100%;
+}
+.brand_mainner{
+    margin: 0 auto;
+    width: 1000px;
+}
+.brand_mainner img{
+    width: 100%;
+}
+.stance{
+    width: 1000px;
+    min-width: 1000px;
+    margin: 0 auto;
+}
+.stance_abs{
+    width: 1000px;
+    min-width: 1000px;
+    height: 398px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 31px 0;
+    margin-bottom: 30px;
+    background: #ff4400;
+    position: relative;
+    display: flex;
+}
+.stance_list{
+    width: 270px;
+    height: 285px;
+    position: absolute;
+    top: 88px;
+    left: 31px;
+    z-index: 5;
+}
+.stance_item{
+    background: #666666;
+    color: #ffffff;
+    height: 50px;
+    line-height: 50px;
+    width: 270px;
+    margin-bottom: 45px;
+    font-size: 32px;
+    border-radius: 30px;
+    text-align: center;
+}
+.stance_model1{
+    margin-left: 170px;
+    width: 470px;
+    padding: 7px 20px 7px 0;
+    text-align: right;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    z-index: 4;
+}
+.stance_model img{
+    width: 310px;
+    height: 310px;
+}
+.stance_fl{
+    margin-left: 30px;
+    width: 280px;
+    height: 336px;
+    overflow: hidden;
+    z-index: 3;
+} 
+a{
+   display: block;
+}
+.stance_title{
+    width: 250px;
+    padding: 30px 30px 0 0;
+    font-size: 24px;
+    line-height: 30px;
+    height: 90px;
+    overflow: hidden;
+    color: #fff;
+}
+.price{
+    margin-top: 80px;
+    text-align: center;
+}
+.stance_oldPrice{
+    font-size: 20px;
+    color: #c2c2c2;
+}
+.ftc{
+    color: #ff6700;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}
+.ftc span{
+    font-size: 42px;
+}
+.stance_buy{
+    background: #ff4400;
+    cursor: pointer;
+    width: 265px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 30px;
+    border-radius: 30px;
+    text-align: center;
+    color: #fff;
+}
+.stance_buy img{
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.ttt{
+    width: 100%;
+    height: 199px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    z-index: -1;
+}
+.goods{
+    display: flex;
+    margin: 0 auto;
+    width: 1000px;
+    flex-wrap: wrap;
+}
+.goods-item{
+    padding-top: 10px;
+    width: 199px;
+    background-color: #fff;
+    margin-top: 14px;
+}
+.goods-item a img{
+    margin: 0 auto;
+    display: block;
+    width: 160px;
+}
+.goods-title{
+    margin: 0 auto 5px;
+    width: 150px;
+    font-size: 14px;
+    color: #444;
+    text-align: center;
+    height: 40px;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.goods-title:hover{
+    color: #248DCC;
+}
+.goods-newPrice{
+    font-size: 24px;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 40px;
+    color: #ff4400;
+    text-align: center;
+}
+.ftc1{
+    font-size: 14px;
+}
+.goods-oldPrice{
+    text-align: center;
+    font-size: 12px;
+}
+.c9999{
+    color: #999
+}
+#goods_buy{
+    cursor: pointer;
+    text-align: center;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    margin: 15px auto 10px;
+    color: #fff;
+    font-size: 16px;
+    background-color: #ff6700;
+
+}
+.rela{
+    width: 490px;
+    margin-left: 31px;
+    z-index: 2;
+    position: relative;
+}
+.rela_title{
+    height: 80px;
+    margin: 50px 0 0 0;
+    width: 440px;
+}
+.rela_title span{
+    color: #fff;
+    font-size: 32px;
+    margin-right: 20px;
+}
+.rela_name{
+    width: 390px;
+    margin: 70px 0 0 0;
+}
+.rela_name a{
+    font-size: 24px;
+    color: #777;
+}
+.buy{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 265px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 30px;
+    border-radius: 30px;
+    background: #e7e7e7;
+    cursor: default;
+}
+.fff{
+    z-index: 0;
+}
+.del{
+    font-size: 20px;
+    color: #c2c2c2;
+    margin: 10px 0 0 0;
+}
+.sale{
+    font-size: 20px;
+    font-weight: bold;
+}
+.sale span{
+    font-size: 42px;
+}
+.stance_model{
+    margin-left: 35px;
+    width: 380px;
+    position: relative;
+    z-index: 1;
+}
+.set_out{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 130px;
+    height: 130px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 130px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.7);
+    font-size: 26px;
+    text-align: center;
+}

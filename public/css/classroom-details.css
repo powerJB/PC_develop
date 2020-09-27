@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content .floorphoto {
+  position: absolute;
+  left: 50%;
+  margin-left: -980px;
+}
+
+.content .content {
+  position: relative;
+}
+
+.content .overflow {
+  width: 100%;
+  height: 100%;
+  padding-top: 500px;
+  background-color: #3CBEF9;
+  margin: 0 auto;
+}
+
+.content .nav {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.content .imgBox {
+  overflow: hidden;
+  width: 496px;
+  height: 240px;
+  background-color: white;
+  border-radius: 25px;
+  margin: 8px 0 0 4px;
+  float: left;
+}
+
+.content .clearfix::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.content .clearfix::before {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.content .imgbo {
+  overflow: hidden;
+  width: 210px;
+  padding: 15px 0 0 15px;
+  float: left;
+}
+
+.content .imgbo img {
+  width: 100%;
+}
+
+.content .twoline {
+  padding: 20px 15px 0;
+  overflow: hidden;
+}
+
+.content .twotext {
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 1.4;
+  font-size: 24px;
+  height: 66px;
+}
+
+.content .tw {
+  padding-top: 20px;
+  margin-top: 10px;
+}
+
+.content .tw span {
+  font-size: 24px;
+  color: #0b9619;
+}
+
+.content .tw s {
+  font-size: 18px;
+  color: #999;
+  margin-left: 10px;
+}
+
+.content .tw a {
+  display: block;
+  height: 46px;
+  font-size: 24px;
+  color: white;
+  line-height: 46px;
+  background-color: #78b300;
+  border-radius: 23px;
+  text-align: center;
+  margin-top: 20px;
+}
+.content .tw a:hover{
+  background-color: #52a836;
+}
+.content .petschoolCart {
+  display: inline-block;
+  width: 32px;
+  height: 29px;
+  background: url('https://static.epetbar.com/www/zt/knowledge/images/petschoolCart.png');
+  vertical-align: -4px;
+}

@@ -1,0 +1,1580 @@
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header {
+  width: 100%;
+  background-color: #fff;
+}
+
+.headerTop {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  background: #f5f5f5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.ct {
+  height: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.head-hl {
+  display: flex;
+}
+
+.head-hl .hl-item {
+  font-size: 12px;
+  line-height: 28px;
+  color: #444444;
+  position: relative;
+}
+
+
+.head-hl .region b {
+  display: block;
+  top: 8px;
+  right: 0px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background: url(https://static.epetbar.com/static_web/pc/dist/images/background/xqico.png) no-repeat;
+  background-position: -3px -30px;
+}
+
+.region:hover .region_box{
+	display: block;
+}
+.region:hover .region_text>.iconfont{
+	display: inline-block;
+	transform: rotate(180deg);
+}
+.region_box{
+	width: 400px;
+	height: 300px;
+  display: inline-block;
+  border: 1px solid #ddd;
+	padding: 10px;
+	background: #fff;
+	position: absolute;
+	top: 28px;
+  left: -1px;
+  line-height: 12px;
+	display: none;
+}
+.region_text>span{
+	vertical-align: middle;
+}
+
+.i_box{
+	color: #999;
+}
+.i_box>li{
+	margin: 11px 5px;
+  padding: 5px 8px;
+  cursor: text;
+}
+.t{
+	display: flex;
+}
+.i_box_a,.b_box{
+	display: flex;
+	margin: 11px 5px;
+	flex-wrap: wrap;
+}
+.i_box_a>li,.b_box>li{
+
+	padding: 5px 8px;
+	margin-right: 10px	;
+}
+.i_box_a>li:hover{
+	background-color: #ff6700;
+	color: #fff;
+}
+.b_box>li:hover{
+	background-color: #ff6700;
+	color: #fff;
+}
+.i_box_a>.active,.b_box>.active{
+	background-color: #ff6700;
+	color: #fff;	
+}
+.region_tab{
+	display: flex;
+	margin-left: 5px;
+	border-bottom:1px solid #eee;
+
+}
+.region_tab>li{
+	padding: 8px 15px;
+	margin-right: 2px;
+	border:1px solid #eee;
+	border-bottom: 0px;
+	margin-bottom: -1px;
+	background-color: #f6f6f6;
+}
+.region_tab>.a_itme{
+	background-color: #FFF;
+}
+.b_itme{
+	display: none;
+}
+.b_box>li{
+	margin: 5px 5px;
+}
+
+
+
+
+
+
+
+
+.head-hl .hl-brand {
+  padding: 0 5px;
+}
+
+.head-hl .hl-item .epet-brand {
+  display: inline-block;
+  background: url(https://static.epetbar.com/static_web/pc/dist/images/background/epetbrand.png) no-repeat;
+  background-position: 0 8px;
+  text-indent: 16px;
+  color: #444444;
+}
+
+.headerTop .dcc:hover {
+  color: #248DCC;
+}
+
+.head-hl .place-send {
+  margin-left: 5px;
+}
+
+.head-hl .place-str {
+  padding: 0 20px 0 5px;
+}
+
+.head-hl .epetbrand {
+  background: url(https://static.epetbar.com/static_web/pc/dist/images/background/bg.png) no-repeat;
+  display: inline-block;
+  text-indent: 19px;
+  background-position: -9px -425px;
+  margin: 0 5px;
+}
+
+.head-hl .c66 {
+  color: #666666;
+  cursor: pointer;
+}
+
+.head-hl .epetbrand:hover {
+  color: #ff8500;
+}
+
+
+.head-hr li {
+  display: inline-block;
+  padding: 0 5px;
+  position: relative;
+  color: #444444;
+  line-height: 28px;
+  font-size: 12px;
+  cursor: pointer;
+  position: relative;
+}
+
+.head-hr li i {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  margin-top: -2px;
+  margin-right: 5px;
+  background: url(https://static.epetbar.com/static_web/pc/dist/images/background/bg.png) no-repeat;
+  vertical-align: middle;
+}
+
+
+.head-hr .cart-t i {
+  background-position: -291px -46px;
+  width: 14px;
+  height: 14px;
+}
+.head-hr .cart-t a {
+  color: #444444;
+}
+.head-hr .cart-t:hover a {
+  color: #248DCC;
+}
+.head-hr .cart-t em {
+  color: red;
+}
+
+
+.head-hr .topgz {
+  padding: 0 14px 0 5px;
+}
+.head-hr .collect i {
+  width: 15px;
+  background-position: -353px -46px;
+}
+.head-hr .topgz b {
+  display: block;
+  width: 0;
+  height: 0;
+  border: transparent solid 4px;
+  border-top: #717171 solid 4px;
+  position: absolute;
+  right: 0;
+  top: 12px;
+  overflow: hidden;
+}
+.head-hr .topgz .myec_tc {
+  display: none;
+  width: 60px;
+  position: absolute;
+  top: 28px;
+  left: 0;
+  border: 1px solid #ddd;
+  border-top: 0;
+  padding: 5px 20px 5px 10px;
+  background-color: #FFF;
+  box-shadow: 3px 3px 4px #777;
+}
+
+
+.head-hr .my i {
+  background-position: -312px -46px;
+}
+.head-hr .my .myec_tc {
+  width: 80px;
+}
+.head-hr .topgz:hover .myec_tc {
+  display: block;
+}
+.head-hr .topgz:hover b {
+  transition: transform .2s;
+  transform: rotate(180deg);
+  transform-origin: 50% 25%;
+}
+
+
+.head-hr .mobile i {
+  background-position: -334px -46px;
+}
+.head-hr .mobile img {
+  display: none;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 29px;
+  right: 0;
+}
+.head-hr .mobile:hover img {
+  display: block;
+}
+/* headerTop -- end */
+
+
+.headerBot {
+  padding-top: 30px;
+}
+.headerBot .pt10 {
+  padding-top: 10px;
+}
+.headerBot .head-bh .hb {
+  height: 100px;
+  display: flex;
+  position: relative;
+}
+
+.headerBot .head-bh .head-logo {
+  height: 100px;
+  width: 268px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.headerBot .head-bh .head-logo img {
+  display: block;
+  margin-top: -5px;
+}
+
+
+.headerBot .head-bh .search {
+  margin: 23px 0 0 33px;
+  position: relative;
+}
+.headerBot .head-bh .search input {
+  border: #459d36 solid 2px;
+  background: 0 0;
+  padding: 0 5px 0 15px;
+  width: 382px;
+  height: 30px;
+  outline: 0;
+  line-height: 30px;
+  font-size: 14px;
+  float: left;
+  box-sizing: inherit;
+}
+.headerBot .head-bh .search .btn {
+  display: inline-block;
+  width: 73px;
+  height: 34px;
+  cursor: pointer;
+  background-color: #459d36;
+  color: #FFF;
+  font-size: 14px;
+  text-align: center;
+  line-height: 34px;
+  margin: 0 !important;
+}
+.headerBot .head-bh .search .btn:hover {
+  box-shadow: 0 0 8px rgba(0,0,0,.3);
+}
+
+.headerBot .head-bh .search .search-list {
+  position: absolute;
+  top: 34px;
+  left: 0;
+  width: 402px;
+  border: 1px #e7e7e7 solid;
+  border-top: none;
+  background: #fff;
+  z-index: 99;
+  display: none;
+}
+.headerBot .head-bh .search .search-list .item {
+  height: 30px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.headerBot .head-bh .search .search-list .item a {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #333333;
+  line-height: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.headerBot .head-bh .search .search-list .item:hover {
+  background-color: #eee;
+}
+
+.headerBot .head-bh .search .keywords {
+  margin: 10px 0;
+  height: 17px;
+  font-size: 12px;
+  line-height: 17px;
+  color: #999;
+}
+.headerBot .head-bh .keywords label {
+  margin: 10px 0;
+  height: 17px;
+}
+.headerBot .head-bh .keywords .list {
+  display: inline-block;
+  margin-top: 0!important;
+}
+.headerBot .head-bh .keywords .list li {
+  display: inline-block;
+}
+
+.headerBot .head-bh .keywords .list a {
+  color: #999;
+}
+.headerBot .head-bh .keywords .list .item a:hover {
+  color: #333;
+}
+.headerBot .head-bh .keywords .list .cred a {
+  color: red!important;
+}
+.headerBot .head-bh .keywords .list .stp {
+  margin: 0 10px;
+}
+
+
+.headerBot .head-bh .cart{
+  position: absolute;
+  top: 23px;
+  right: 0;
+  width: 130px;
+  height: 39px;
+  text-align: center;
+  text-indent: 2em;
+  background: url(https://static.epetbar.com/static_web/pc/dist/images/background/shopping-cart.gif) no-repeat;
+}
+.headerBot .head-bh .cart a{
+  line-height: 39px;
+  color: #666;
+  font-size: 12px;
+}
+.headerBot .head-bh .cart a em{
+  color: red;
+}
+
+
+
+.headerBot .head-bb .bb {
+  height: 34px;
+  display: flex;
+}
+.headerBot .head-bb .nav {
+  width: 228px;
+  display: flex;
+}
+.headerBot .head-bb .nav .w {
+  width: 50%;
+  color: #444;
+  font-size: 16px;
+  line-height: 34px;
+  box-sizing: border-box;
+  padding: 0 15px;
+  cursor: pointer;
+}
+.headerBot .head-bb .nav .wl {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+  line-height: 32px;
+}
+.headerBot .head-bb .nav .wr {
+  height: 34px;
+  background-color: #46ab50;
+  color: #fff;
+  position: relative;
+}
+.headerBot .head-bb .nav .w b {
+  width: 13px;
+  height: 7px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -2px;
+  margin-left: 5px;
+  background: url(https://static.epetbar.com/static_web/pc/dist/images/background/bg2.png?v=0128);
+  background-position: 0 -1276px;
+}
+.headerBot .head-bb .nav .wl b {
+  width: 16px;
+  height: 13px;
+  transform: rotate(-90deg);
+  background-position: -17px -1257px;
+}
+
+
+.headerBot .head-bb .wr .catelist {
+  position: absolute;
+  top: 34px;
+  right: 0;
+  width: 228px;
+  /* height: 360px; */
+  display: none;
+  z-index: 9;
+}
+.headerBot .head-bb .wr .catelist p {
+  height: 3px;
+}
+.headerBot .head-bb .wr .dogtype {
+  /* height: 358px; */
+  background-color: #fff;
+  position: relative;
+}
+.headerBot .head-bb .wr .dogtype .dog-item {
+  height: 50px;
+  padding: 0 16px;
+  border-bottom: 1px dashed #e0e0e0;
+  background: url(https://static.epetbar.com/static_web/pc/dist/images/background/bg2.png?v=0128) no-repeat;
+  background-position: right -1204px;
+}
+
+.headerBot .head-bb .wr .dogtype .dog-item > a {
+  display: inline-block;
+  width: 88px;
+  font-size: 14px;
+  line-height: 50px;
+  color: #444;
+}
+
+.headerBot .head-bb .wr .dogtype .dog-item.pet-active {
+  height: 52px;
+  line-height: 52px;
+  background: #fff;
+  color: #22990d;
+  text-indent: 20px;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+.headerBot .head-bb .nav .wr:hover b {
+  transition: .2s;
+  transform: rotate(180deg);
+}
+.headerBot .head-bb .nav .wr:hover .catelist {
+  display: block;
+}
+.headerBot .head-bb .wr .dogtype .dog-item:hover {
+  border-top: 1px solid #62a727;
+  border-bottom: 1px solid #62a727;
+  background: #FFF;
+  width: 197px;
+}
+.headerBot .head-bb .wr .dogtype .dog-item a:hover {
+  color: #248DCC;
+}
+
+
+.headerBot .head-bb .nav-list {
+  display: flex;
+}
+.headerBot .head-bb .nav-list .nav-item a {
+  display: block;
+  line-height: 34px;
+  font-size: 16px;
+  color: #000;
+  font-weight: 700;
+  padding: 0 20px;
+  text-decoration: none;
+  height: 34px;
+}
+
+
+.headerBot .head-bb .nav-list .ehk a {
+  margin-top: -2px;
+  padding: 0 0 0 25px;
+}
+.headerBot .head-bb .nav-list .ehk img {
+  display: block;
+  width: 100%;
+}
+
+
+.headerBot .head-bb .nav-list .nav-item b {
+  display: inline-block;
+  width: 13px;
+  height: 17px;
+  background: url(https://static.epetbar.com/static_web/pc/dist/images/background/bg2.png?v=0128) -35px -1280px;
+  vertical-align: middle;
+  margin-top: -2px;
+  margin-right: 6px;
+}
+.headerBot .head-bb .nav-list .nav-item a:hover {
+  color: #409b49;
+}
+.headerBot .head-bb .nav-list .nav-item a:hover b {
+  transition: transform .2s;
+  transform: rotate(360deg);
+}
+
+
+
+
+/* menu  --  start */
+.headerBot .nav .nav-menu {
+  border: 1px solid #62a727;
+  background: #f5f5f5;
+  width: 570px;
+  position: absolute;
+  top: 0;
+  left: 228px;
+  display: none;
+  line-height: 30px;
+  z-index: -1;
+  padding: 10px;
+  min-height: 358px;
+  overflow: hidden;
+  box-shadow: 3px 3px 4px #777;
+}
+
+.headerBot .nav .nav-menu .mincate {
+  line-height: 30px;
+}
+.headerBot .nav .nav-menu .ctitle {
+  padding-left: 10px;
+  height: 35px;
+  display: flex;
+}
+.headerBot .nav .nav-menu .ctitle img {
+  height: 35px;
+  width: 35px;
+}
+.headerBot .nav .nav-menu .ctitle a {
+  font-size: 16px;
+  line-height: 35px;
+  padding-left: 10px;
+  color: #444;
+}
+.headerBot .nav .nav-menu .ctitle i {
+  display: inline-block;
+  width: 35px;
+  background: url(https://static.epetbar.com/static_web/pc/dist/images/background/bg.png) -470px -240px no-repeat;
+}
+
+.headerBot .nav .nav-menu .dotline {
+  height: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px #ddd dotted;
+}
+.headerBot .nav .nav-menu .middle {
+  display: flex;
+}
+.headerBot .nav .nav-menu .mid_head {
+  width: 150px;
+  text-align: right;
+  padding-right: 10px;
+  height: 25px;
+  line-height: 25px;
+}
+.headerBot .nav .nav-menu .mid_head a {
+  color: #008000;
+  font-weight: 700;
+  padding-right: 10px;
+  font-size: 12px;
+}
+.headerBot .nav .nav-menu .mid_head a:hover {
+  color: green!important;
+}
+.headerBot .nav .nav-menu .mid_head img {
+  vertical-align: middle;
+  height: 25px;
+  width: 25px;
+}
+.headerBot .nav .nav-menu .mid_list a {
+  display: inline-block;
+  padding: 0 6px 0 7px;
+  border-left: 1px #ddd solid;
+  height: 16px;
+  line-height: 16px;
+  color: #444;
+  font-size: 12px;
+}
+.headerBot .nav .nav-menu .mid_list a:hover {
+  color: #248DCC;
+}
+
+.headerBot .nav .pet-active .nav-menu {
+  width: 756px;
+  padding: 10px 8px 20px;
+}
+.headerBot .nav .pet-active .action-slider {
+  display: flex;
+  flex-wrap: wrap;
+}
+.headerBot .nav .pet-active .action-slider a {
+  width: 364px;
+  height: 172px;
+  margin: 5px;
+  position: relative;
+}
+.headerBot .nav .pet-active .action-slider img {
+  width: 100%;
+}
+.headerBot .nav .pet-active .action-slider .left-time2 {
+  background: url(https://static.epetbar.com/static_www/brandsale/images/textbg2.png) 0 no-repeat;
+  background-size: 100%;
+  width: 74px;
+  height: 25px;
+  line-height: 25px;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  font-size: 12px;
+  color: #fff;
+  padding-left: 20px;
+}
+.headerBot .nav .pet-active .act-click {
+  height: 24px;
+  padding: 18px 0 10px;
+  text-align: center;
+}
+.headerBot .nav .pet-active .act-click .btn-tiemai {
+  border: 0;
+  display: inline-block;
+  margin: 0;
+  width: 110px;
+  height: 25px;
+}
+
+
+
+
+
+
+
+
+
+.headerBot .head-bb .wr .dogtype .dog-item:hover .nav-menu {
+  display: block;
+}
+
+.header .line2 {
+  border-bottom: #357e34 solid 2px;
+}
+
+
+
+
+
+/* login - start */
+.newlogin-wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .6);
+  z-index: 200;
+  display: none;
+}
+.newlogin-wrap .fiexd {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 220;
+}
+.newlogin-wrap .newlogin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 50px 30px;
+  width: 322px;
+  background: #fff;
+  border-radius: 20px;
+  opacity: 1;
+  z-index: 260;
+}
+.newlogin-wrap .newlogin .signin,
+.newlogin-wrap .newlogin .signup {
+  display: none;
+}
+.newlogin-wrap .newlogin .sign {
+  display: block;
+}
+
+
+
+.newlogin-wrap .newlogin .gototitle {
+  margin: 40px 0;
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  display: flex;
+}
+.newlogin-wrap .newlogin .gototitle .it1 {
+  display: block;
+  flex: 1;
+  cursor: pointer;
+}
+
+.newlogin-wrap .newlogin .gototitle .cf0 {
+  color: #f03e3e;
+}
+
+.newlogin-wrap .newlogin .gototitle .liner {
+  width: 1px;
+  color: #eee;
+}
+.newlogin .setting {
+  margin: 20px auto;
+  padding-left: 15px;
+  width: 300px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #dddddd;
+  border-radius: 30px;
+  display: flex;
+}
+.newlogin .settinguser>span {
+  background: url(https://static.epetbar.com/static_web/pc/src/images/newlogin/newico.png) no-repeat;
+  background-position: 0 -60px;
+}
+.newlogin .setting>span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+  border-right: 1px solid #f4f4f4;
+  flex-shrink: 0;
+}
+.newlogin .settingpw>span {
+  background: url(https://static.epetbar.com/static_web/pc/src/images/newlogin/newico.png) no-repeat;
+  background-position: 0 -40px;
+}
+.newlogin input {
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  padding: 0 15px;
+  display: block;
+  flex: 1;
+  font-size: 12px;
+}
+.newlogin .inputcode {
+  display: inline-block;
+  width: 110px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 14px;
+  color: #f03e3e;
+  border-left: 1px solid #f4f4f4;
+  text-align: center;
+  margin-top: 7px;
+  cursor: pointer;
+}
+.newlogin .inputcode .c999{
+  color: #999;
+}
+.newlogin .bindusergray {
+  background: #999;
+  height: 42px;
+  line-height: 42px;
+  border-radius: 30px;
+  font-size: 14px;
+  color: #fff;
+  margin-top: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+.newlogin .login-way {
+  display: none;
+}
+.newlogin .login-way.db {
+  display: block;
+}
+
+.newlogin .otherlogin {
+  margin-top: 45px;
+  margin-bottom: 25px;
+  height: 49px;
+  line-height: 49px;
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+}
+.newlogin .loginstype a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background: url(https://static.epetbar.com/static_web/pc/src/images/newlogin/newico2.png) no-repeat;
+  margin-top: 6px;
+}
+.newlogin .loginstype a.zhifubao {
+  background-position: 0 0;
+}
+.newlogin .loginstype a.weixin {
+  background-position: -43px 0;
+}
+.newlogin .loginstype a.QQ {
+  background-position: -87px 0;
+}
+.newlogin .que {
+  color: #999;
+}
+.newlogin .que a {
+  color: #444;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.newlogin .que a:hover {
+  color: #248DCC;
+}
+.newlogin .ido {
+  color: #444;
+  margin-right: 0;
+}
+.newlogin .ido a {
+  color: #f03e3e;
+}
+.argent_ico {
+  background: url(https://static.epetbar.com/static_web/pc/src/images/newlogin/select.png) no-repeat 0px -19px;
+  width: 19px;
+  height: 19px;
+  display: inline-block;
+  vertical-align: -4px;
+}
+
+
+
+
+
+
+
+
+/* header -- end */
+
+
+/* footer -- start */
+.footer {
+  background-color: #f5f5f5;
+}
+.foot-top {
+  border-bottom: 1px solid #e5e5e5;
+}
+.foot-top .foot-serve .serve-list {
+  padding: 19px 0;
+  display: flex;
+  width: 100%;
+}
+.foot-top .foot-serve .serve-list .serve-item {
+  width: 128px;
+  height: 62px;
+  padding-left: 72px;
+  background: url(https://static.epetbar.com/static_web/pc/dist/images/footer/logo.png) no-repeat;
+  line-height: 62px;
+  color: #444;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color .8s, transform .8s;
+}
+
+.foot-top .foot-serve .serve-list .serve-item.zp {
+  background-position: 0 0;
+}
+.foot-top .foot-serve .serve-list .serve-item.pl {
+  background-position: 0 -162px;
+}
+.foot-top .foot-serve .serve-list .serve-item.yz {
+  background-position: 0 -242px;
+}
+.foot-top .foot-serve .serve-list .serve-item.kx {
+  background-position: 0 -82px;
+}
+.foot-top .foot-serve .serve-list .serve-item.gy {
+  background-position: 0 -322px;
+}
+.foot-top .foot-serve .serve-list .serve-item.ty {
+  background-position: 0 -402px;
+}
+
+.foot-top .foot-serve .serve-list .serve-item:hover {
+  color: #ed4044;
+  transform: translateY(-5px)
+}
+/* server- end */
+
+.foot-bot .info {
+  display: flex;
+  padding: 20px 0 25px;
+  width: 100%;
+  height: 137px;
+  border-bottom: 1px solid #e5e5e5;
+  position: relative;
+}
+
+.foot-bot .info .info-phone {
+  margin-top: 5px;
+  margin-right: 40px;
+  display: flex;
+  line-height: 1.3;
+}
+.foot-bot .info .info-phone img {
+  margin-top: 5px;
+  display: block;
+}
+.foot-bot .info .info-phone .phone {
+  margin-left: 30px;
+}
+.foot-bot .info .info-phone .ft14 {
+  font-size: 14px;
+  font-weight: 600;
+}
+.foot-bot .info .info-phone .ft20 {
+  font-size: 20px;
+}
+.foot-bot .info .info-phone .ft12 {
+  font-size: 12px;
+}
+.foot-bot .info .info-phone .c666 {
+  color: #666;
+}
+.foot-bot .info .info-phone .c444 {
+  color: #444;
+}
+.foot-bot .info .info-phone .mt15 {
+  margin-top: 15px;
+}
+.foot-bot .info .info-phone .ml5 {
+  margin-left: 5px;
+}
+
+
+.foot-bot .info .servers-list {
+  margin-top: 5px;
+  margin-right: 40px;
+}
+.foot-bot .info .servers-list th, .foot-bot .info .servers-list td{
+  display: inline-block;
+  margin: 0 60px 0 40px;
+  font-size: 14px;
+  color: #444;
+  line-height: 1.4;
+}
+.foot-bot .info .servers-list th {
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 20px;
+}
+.foot-bot .info .servers-list td {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.foot-bot .info .servers-list td:hover {
+  color: #ed4044;
+  text-decoration: underline;
+}
+
+
+.foot-bot .info .app-code {
+  margin: 0 36px 0 20px;
+}
+.foot-bot .info .code p {
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.4;
+}
+.foot-bot .info .code .img {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+
+.foot-bot .info .wx-code {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+/* info - end */
+
+
+.foot-bot .link {
+  height: 20px;
+  margin: 20px 50px 0 0;
+  display: flex;
+  justify-content: center;
+}
+.foot-bot .link .link-item {
+  font-size: 12px;
+  line-height: 20px;
+  color: #999;
+  margin-right: 18px;
+  cursor: pointer;
+}
+.foot-bot .link .link-item img {
+  width: 18px;
+  margin: 0 3px;
+  vertical-align: -4px;
+}
+.foot-bot .link .link-item:hover {
+  color: #ed4044;
+  text-decoration: underline;
+}
+
+/* link - end */
+
+.foot-bot .support {
+  margin-top: 20px;
+  text-align: center;
+}
+.foot-bot .support img {
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.foot-bot .copy {
+  padding: 20px 0 40px;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+.foot-bot .copy a {
+  color: #444;
+}
+.foot-bot .copy a:hover {
+  color: #ed4044;
+  text-decoration: underline;
+}
+/* footer -- end */
+
+
+
+
+
+.slider {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 35px;
+  padding-top: 160px;
+  background: #444;
+  z-index: 300;
+}
+.slider .item {
+  position: relative;
+}
+.slider .item:hover {
+  background: #555;
+}
+.slider .item .bg {
+  background: url(https://static.epetbar.com/static_web/pc/dist/images/background/bar_new.png) no-repeat;
+}
+.slider .item:hover .bg {
+  background: url(https://static.epetbar.com/static_web/pc/dist/images/background/bar_newhover.png) no-repeat;
+}
+.slider .item a {
+  display: block;
+  position: relative;
+}
+
+
+.slider .userbox .bagp {
+  margin: 2px 5px 0;
+  padding: 17px 14px 14px 0;
+  display: flex;
+}
+.slider .userbox .bagp .hd img {
+  display: block;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  border: #110d09 solid 1px;
+}
+.slider .userbox .baginfo {
+  padding: 14px 0 0 13px;
+}
+.slider .userbox .baginfo span {
+  font-weight: 600;
+  color: #000;
+}
+.slider .userbox .epet-data {
+  border-top: 1px dashed #e5e5e5;
+  margin: 0 5px;
+  padding: 8px 14px 8px 0;
+  border-bottom: 1px dashed #e5e5e5;
+  display: flex;
+}
+.slider .userbox .epet-data a img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #1c1711;
+}
+.slider .userbox .epet-name a {
+  margin-top: 10px;
+  margin-left: 20px;
+  color: #444;
+}
+
+
+
+.slider .item .w35 {
+  width: 35px;
+  height: 35px;
+}
+.slider .item .bg.user {
+  background-position: 0 -235px;
+  margin: 4px 0 26px;
+}
+.slider .item .bg.order {
+  background-position: 0 -305px;
+}
+.slider .item .bg.view {
+  background-position: 0 -693px;
+}
+.slider .item .cart {
+  padding-bottom: 10px;
+  margin: 5px 0 15px;
+}
+.slider .item .cart .bg.w35 {
+  display: block;
+  background-position: 0 -270px;
+}
+.slider .item .cart .cart-num {
+  width: 19px;
+  text-align: center;
+  margin: 0 auto;
+  color: #a6a6a6;
+  font-size: 12px;
+  line-height: 1.4;
+}
+.slider .cart .cart-num span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-top: 3px;
+  line-height: 20px;
+  border-radius: 50%;
+  background-color: #a6a6a6;
+  color: #444;
+}
+.slider .item:hover .cart .cart-num {
+  color: #fff;
+}
+.slider .item:hover .cart-num span {
+  background-color: #fff;
+}
+
+.slider .item .serve .bg.w35 {
+  background-position: 2px -615px;
+}
+
+
+.slider .slider-down {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+}
+.slider .phone .bg {
+  background-position: 0px -410px!important;
+}
+.slider .wx .bg {
+  background-position: 0px -720px!important;
+}
+.slider .sina .bg {
+  background-position: 0px -753px!important;
+}
+.slider .btop .bg {
+  background-position: 0px -515px!important;
+}
+
+
+.slider .item .userbox {
+  background: #fff;
+  width: 292px;
+  position: absolute;
+  right: 35px;
+  top: 0;
+  padding: 0 10px 10px 21px;
+  border: 1px solid #ccc;
+  font-size: 12px;
+  display: none;
+}
+.slider .i-user:hover .userbox {
+  display: block;
+}
+
+.slider .item .cartbox {
+  position: absolute;
+  width: 510px;
+  top: 0;
+  right: 35px;
+  z-index: 9999;
+  cursor: default;
+  border: 1px solid #ddd;
+  padding: 15px;
+  padding-top: 25px;
+  background-color: #fff;
+  box-sizing: border-box;
+  font-size: 12px;
+  display: none;
+}
+.slider .item .cartbox .cart-list {
+  max-height: 300px;
+  overflow: auto;
+}
+.slider .item .cartbox .cart-item {
+  line-height: 18px;
+  border-bottom: 1px dashed #ddd;
+  margin-bottom: 10px;
+  display: flex;
+}
+.slider .item .cartbox .cart-item .img {
+  margin-right: 10px;
+}
+.slider .item .cartbox .cart-item img {
+  border: 1px solid #ddd;
+  width: 60px;
+  display: block;
+}
+.slider .item .cartbox .cart-item .info p {
+  width: 380px;
+}
+.slider .item .cartbox .cart-item .info p a {
+  color: #444;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.slider .item .cartbox .cart-item .info p em {
+  color: #999;
+  display: block;
+}
+.slider .cartbox .cart-item .info .remove {
+  text-align: right;
+  margin-bottom: 10px;
+}
+.slider .cartbox .cart-item .info .remove span {
+  color: #444;
+  cursor: pointer;
+}
+.slider .cartbox .cart-item .info .remove span:hover {
+  color: #257ce4;
+}
+.slider .cartbox .cart-btn {
+  padding-top: 15px;
+  line-height: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+.slider .cartbox .cart-btn span {
+  color: red;
+}
+.slider .cartbox .cart-btn .btn {
+  display: inline-block;
+  padding: 0;
+  width: 70px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  background: #f03e3e;
+  border-radius: 3px;
+  border: 1px solid #f03e3e;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.slider .cartbox .cart-btn .btn.btn_clear {
+  background: #fff;
+  color: #f03e3e;
+  border: 1px solid #f03e3e;
+}
+
+.slider .i-cart:hover .cartbox {
+  display: block;
+}
+
+.slider .kf-body {
+  position: fixed;
+  bottom: 0px;
+  right: 20px;
+  z-index: 99999;
+  width: 360px;
+  height: 500px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px 0 rgba(23,23,26,0.2);
+  overflow: hidden;
+  background-color: #f0f1f2;
+  display: none;
+}
+.slider .kf-body .body-hd {
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  height: 47px;
+  line-height: 47px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  background: #57c7d4;
+}
+.slider .kf-body .body-hd img {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-top: -5px;
+}
+.slider .kf-body .body-hd .minimize {
+  display: inline-block;
+  width: 16px;
+  height: 27px;
+  margin-left: 20px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.slider .kf-body .body-hd .minimize i {
+  display: inline-block;
+  width: 16px;
+  height: 2px;
+  background-color: #fff;
+  vertical-align: 15px;
+}
+.slider .kf-body .body-md {
+  height: 303px;
+  overflow: auto;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+.slider .kf-body .body-md .sys-info {
+  font-size: 12px;
+  color: #a3afb7;
+  margin: 10px;
+  text-align: center;
+}
+.slider .kf-body .body-md .msg {
+  padding: 10px 0;
+  font-size: 14px;
+  text-align: left;
+}
+.slider .kf-body .body-md .msg-l {
+  display: flex;
+  justify-content: flex-start;
+}
+.slider .kf-body .body-md .msg-r {
+  display: flex;
+  justify-content: flex-end;
+}
+.slider .kf-body .body-md .msg .msg-main {
+  max-width: 266px;
+  min-width: 50px;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+.slider .kf-body .body-md .msg-r  .msg-main {
+  color: #fff;
+  background-color: #57c7d4;
+}
+.slider .kf-body .body-md .msg .msg-main p{
+  text-align: left;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow: initial;
+}
+.slider .kf-body .body-md .msg .msg-main .qa_label{
+  margin: 0;
+  padding: 9px 15px;
+  border-bottom: 1px solid #dedede;
+  line-height: 1.5;
+  word-break: break-all;
+}
+.slider .kf-body .body-md .msg .msg-main ul{
+  padding: 8px 12px 16px 12px;
+}
+.slider .kf-body .body-md .msg .msg-main ul li{
+  position: relative;
+  padding: 8px 0px 0px 0px;
+  word-break: break-all;
+}
+.slider .kf-body .body-md .msg .msg-main ul li::before {
+  content: "";
+  top: 15px;
+  left: 1px;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-right: 5px;
+  border-radius: 50%;
+  background: #337eff;
+  vertical-align: middle;
+}
+.slider .kf-body .body-md .msg .msg-main ul li a{
+  line-height: 1.5;
+  vertical-align: middle;
+  color: #257ce4;
+  cursor: pointer;
+}
+.slider .kf-body .body-bd {
+  border-top: 1px solid #e1e3e6;
+  background-color: #FFF;
+  height: 150px;
+  position: relative;
+}
+.slider .kf-body .body-bd textarea{
+  display: block;
+  width: 100%;
+  height: 78px;
+  box-sizing: border-box;
+  padding: 10px;
+  resize: none;
+}
+.slider .kf-body .body-bd textarea::placeholder{
+  color: #bec5cc;
+}
+.slider .kf-body .body-bd .send-btn{
+  position: absolute;
+  bottom: 31px;
+  right: 10px;
+  padding: 6px 20px;
+  font-size: 14px;
+  line-height: 14px;
+  background-color: #57c7d4;
+  border-radius: 3px;
+  opacity: .6;
+  color: #fff;
+  cursor: default;
+}
+
+
+
+.slider .slider-down .bg span {
+  display: none;
+  position: absolute;
+}
+.slider .slider-down .bg.app span {
+  background: url(https://static.epetbar.com/static_web/pc/dist/images/background/app_code.png?v=326) no-repeat;
+  width: 187px;
+  height: 231px;
+  bottom: -12px;
+  right: 28px;
+}
+.slider .slider-down .bg.wx span {
+  background: url(https://static.epetbar.com/static_web/pc/dist/images/background/weixin1.jpg?v=326) no-repeat;
+  width: 188px;
+  height: 228px;
+  bottom: 0;
+  right: 35px;
+  border: 1px #ddd solid;
+}
+.slider .slider-down .bg.wb span {
+  background: url(https://static.epetbar.com/static_web/pc/dist/images/background/weibo.jpg?v=326) no-repeat;
+  width: 188px;
+  height: 129px;
+  bottom: 0;
+  right: 35px;
+  border: 1px #ddd solid;
+}
+.slider .slider-down .top span {
+  height: 35px;
+  width: 90px;
+  line-height: 35px;
+  background-color: #FFA200;
+  position: absolute;
+  top: 0;
+  right: 35px;
+  text-align: center;
+  color: #FFF;
+  font-size: 12px;
+  padding-right: 10px;
+  display: none;
+}
+.slider .slider-down .top span::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: -8px;
+  top: 14px;
+  width: 0;
+  height: 0;
+  border: 4px solid #FFA200;
+  border-top-color: transparent;border-right-color: transparent;border-bottom-color: transparent;
+}
+
+.slider .slider-down .bg:hover span {
+  display: block;
+}
+.slider .slider-down .top {
+  height: 0;
+  transition: height .3s;
+}
+.slider .slider-down .top.on {
+  height: 35px;
+}

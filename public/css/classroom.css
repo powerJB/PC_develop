@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.footer {
+  background-color: #f5f5f5;
+  position: relative;
+  z-index: 6;
+}
+ul {
+  list-style: none;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+a {
+  text-decoration: none;
+}
+.content{
+  position: relative;
+    z-index: 2;
+}
+.content .contents {
+  width: 100%;
+  height: 515px;
+  min-width: 1046px;
+  position: relative;
+}
+
+.content .banner {
+  position: absolute;
+  z-index: 9;
+  top: 0;
+  left: 50%;
+  width: 1920px;
+  margin-left: -960px;
+  height: 515px;
+  text-align: center;
+}
+
+.content .banner img {
+  width: 100%;
+}
+
+.content .nav {
+  width: 100%;
+  height: 76px;
+  background-color: #fef8ef;
+  position: absolute;
+  top: 0;
+}
+
+.content .nav ul {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.content .nav li {
+  font-size: 12px;
+  display: inline-block;
+  padding: 12px 38px 8px;
+}
+
+.content .nav img {
+  width: 45px;
+  height: 40px;
+}
+
+.content .nav a {
+  color: #444444;
+}
+
+.content .nav a:hover {
+  color: #248ddc;
+}
+
+.content .container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-top: -4px;
+}
+
+.content .b-g {
+  position: absolute;
+  top: 0;
+  width: 1920px;
+  left: 50%;
+  margin-left: -960px;
+}
+
+.content .b-g img {
+  width: 100%;
+}
+
+.content .knowledge {
+  position: sticky;
+  top: 30px;
+  background-color: white;
+  width: 963px;
+  padding: 15px 2px 25px 31px;
+  margin: 30px auto;
+  border: 2px solid #fff;
+  overflow: hidden;
+}
+
+.content .title {
+  position: relative;
+}
+
+.content .series {
+  font-size: 20px;
+  color: #444444;
+  position: absolute;
+  top: 0;
+}
+
+.content .series:hover {
+  color: #248ddc;
+}
+
+.content .counts {
+  font-size: 12px;
+  color: #777777;
+}
+
+.content .cutting-line {
+  width: 936px;
+  white-space: nowrap;
+  color: #d7d7d7;
+  overflow: hidden;
+  font-size: 8px;
+  margin-bottom: 15px;
+}
+
+.content .tips {
+  padding-right: 24px;
+  margin-bottom: 15px;
+}
+
+.content .article li {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 13px;
+  margin-bottom: 17px;
+  width: 300px;
+  height: 455px;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  text-align: left;
+}
+.content .article li:hover{
+  border: 1px solid #1fac75;
+}
+.content .article a {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+.content .watching{
+  position: absolute;
+  bottom: 34.5%;
+  right: 0;
+  font-size: 12px;
+  padding: 3px 10px;
+  color: white;
+  background-color: rgba(0,0,0,0.4);
+}
+.content .watching img{
+  width: 18px;
+  height: 11px;
+  margin-right: 5px;
+}
+.content .article-title{
+  font-size: 16px;
+  padding: 20px 15px;
+  color: #333;
+}
+.content .article-text{
+  font-size: 14px;
+  color: #777;
+  padding: 12px 15px;
+}
+.content .ql{
+  width: 12px;
+}
+.content .qr{
+  width: 12px;
+}
+.content .more-activity{
+  width: 1000px;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+.content .more-activity a{
+  display: inline-block;
+  border: 5px solid #fff;
+  margin: 30px 0 55px;
+}
+.content .navigation{
+  position: fixed;
+  top: 22%;
+  right: 45px;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity .5s;
+}
+.content .list{
+  margin-top: -2px;
+  width: 120px;
+  background-color: #1fac75;
+}
+.content .list li{
+  text-align: center;
+  position: relative;
+  line-height: 50px;
+}
+.content .list-a:hover{
+  background-color: #1fbf75;
+}
+.content .g-line{
+  padding:2px 8px;
+  text-align: center;
+}
+.content .list a{
+  color: white;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.content .a-line{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.content .list-b{
+  font-size: 20px;
+  color: white;
+}

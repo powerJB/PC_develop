@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.head-nav{
+  background: #3bceb4;
+  position: relative;
+}
+.head-nav .qpetImg{
+  width: 1150px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 875px;
+}
+.head-nav .qpetImg img{
+  margin: 20px 75px;
+}
+.head-nav .fixed{
+  position: fixed;
+  top: 40%;
+  right: 10%;
+  z-index: 9;
+}
+.head-nav .one{
+  position: absolute;
+  left: 50%;
+  margin-left: -960px;
+}

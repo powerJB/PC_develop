@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../public/css/reset.css">
+  <link rel="stylesheet" href="../public/css/brand.css">
+  <link rel="stylesheet" href="../public/css/head.css">
+  <script src="../public/js/jquery.min.js"></script>
+  <title>品牌特卖 | E宠商城</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="headerTop" style="position: fixed;">
+      <div class="ct container">
+        <ul class="head-hl">
+          <li class="hl-item hl-brand">
+            <a href="../index.html" class="epet-brand dcc">E宠首页</a>
+          </li>
+          <li class="hl-item place-send">送至：</li>
+          <li class="hl-item place-str c66 region">
+            <span class="text_c">河南</span>
+            <b></b>
+            <div class="region_box">
+              <ul class="region_tab">
+                <li class="a_itme">请选择</li>
+                <li class="b_itme">请选择</li>
+              </ul>
+              <div>
+                <div class="t">
+                  <ul class="i_box"></ul>
+                  <div class="pp">
+                    <ul class="i_box_a"></ul>
+                    <ul class="i_box_a"></ul>
+                    <ul class="i_box_a"></ul>
+                    <ul class="i_box_a"></ul>
+                    <ul class="i_box_a"></ul>
+                    <ul class="i_box_a"></ul>
+                    <ul class="i_box_a"></ul>
+                    <ul class="i_box_a"></ul>
+                  </div>
+                </div>
+                <ul class="a_box"></ul>
+                <ul class="b_box"></ul>
+                <ul class="c_box"></ul>
+              </div>
+            </div>
+          </li>
+          <li class="hl-item epetbrand c66">E宠就是正品</li>
+        </ul>
+        <ul class="head-hr" id="userinfo">
+          <li class="dcc" id="tologin">[登陆]</li>
+          <li class="dcc" id="toregister">[注册]</li>
+          <li class="cart-t">
+            <i></i><a href="cart.html">购物车(<em id="cart-num1">0</em>)</a>
+          </li>
+          <li class="my collect topgz dcc">
+            <i></i><span>我的E宠</span><b></b>
+            <ul class="myec_tc boxsha">
+              <li class="dcc">我的订单</li>
+              <li class="dcc">退换货记录</li>
+              <li class="dcc">我的优惠券</li>
+              <li class="dcc">VIP俱乐部</li>
+            </ul>
+          </li>
+          <li class="collect topgz dcc">
+            <i></i><span>收藏</span><b></b>
+            <ul class="myec_tc boxsha">
+              <li class="dcc">我的收藏</li>
+            </ul>
+          </li>
+          <li class="mobile topgz">
+            <i></i>
+            <sapn>手机版</sapn>
+            <img src="https://static.epetbar.com/static_web/pc/src/images/background/code.png" alt="">
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="headerBot">
+      <div class="head-bh pt10">
+        <div class="hb container">
+          <div class="head-logo">
+            <a href="index.html">
+              <img src="https://static.epetbar.com/static_web/pc/dist/images/background/epet-logo.png" alt="">
+            </a>
+          </div>
+          <div class="search">
+            <div class="search-t">
+              <input id="search-ipt" type="text" placeholder="纽萃宝"><span id="search-btn" class="btn">搜索</span>
+            </div>
+            <ul class="search-list" id="search-list"></ul>
+            <div class="keywords">
+              <label>热门搜索：</label>
+              <ul class="list">
+                <li class="item cred"><a href="view/category.html?type_sort_id=2&lab=金毛犬粮">金毛犬粮</a></li>
+                <li class="stp">|</li>
+                <li class="item"><a href="view/category.html?type_sort_id=3&lab=饼干">饼干</a></li>
+                <li class="stp">|</li>
+                <li class="item"><a href="view/category.html?type_sort_id=3&lab=牛肉冻干">牛肉冻干</a></li>
+                <li class="stp">|</li>
+                <li class="item"><a href="view/category.html?type_sort_id=6&lab=蛋糕">蛋糕</a></li>
+                <li class="stp">|</li>
+                <li class="item"><a href="view/category.html?type_sort_id=7&lab=罐头">罐头</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="cart">
+            <a href="cart.html">购物车(<em id="cart-num2">0</em>)</a>
+          </div>
+        </div>
+      </div>
+      <div class="head-bb pt10">
+        <div class="bb container">
+          <nav class="nav">
+            <div class="w wl">狗狗<b></b></div>
+            <div class="w wr">商品分类<b></b>
+              <div class="catelist catelist1">
+                <p></p>
+                <ul class="dogtype" id="dogtype">
+                  <li class="dog-item" data-i="1">
+                    <a href="category.html?type_id=1">主粮</a>
+                    <a href="category.html?type_id=2">零食</a>
+                    <!-- 菜单 -->
+                    <div class="nav-menu">
+                      <div class="mincate" id="food"></div>
+                      <div class="mincate" id="snacks"></div>
+                  </li>
+                  <li class="dog-item" data-i="2">
+                    <a href="category.html?type_id=3">窝垫</a>
+                    <a href="category.html?type_id=4">玩具</a>
+                    <!-- 菜单 -->
+                    <div class="nav-menu">
+                      <div class="mincate" id="cushion"></div>
+                      <div class="mincate" id="toys"></div>
+                    </div>
+                  </li>
+                  <li class="dog-item" data-i="3">
+                    <a href="category.html?type_id=5">清洁</a>
+                    <a href="category.html?type_id=6">保健</a>
+                    <!-- 菜单 -->
+                    <div class="nav-menu">
+                      <div class="mincate" id="cleaning"></div>
+                      <div class="mincate" id="health"></div>
+                    </div>
+                  </li>
+                  <li class="dog-item" data-i="4">
+                    <a href="category.html?type_id=7">护理</a>
+                    <a href="category.html?type_id=8">生活</a>
+                    <!-- 菜单 -->
+                    <div class="nav-menu">
+                      <div class="mincate" id="nursing"></div>
+                      <div class="mincate" id="live"></div>
+                    </div>
+                  </li>
+                  <li class="dog-item" data-i="5">
+                    <a href="/category.html?type_id=9">牵引</a>
+                    <a href="category.html?type_id=10">洗澡</a>
+                    <!-- 菜单 -->
+                    <div class="nav-menu">
+                      <div class="mincate" id="drag"></div>
+                      <div class="mincate" id="wash"></div>
+                    </div>
+                  </li>
+                  <li class="dog-item" data-i="6">
+                    <a href="category.html?type_id=11">服饰</a>
+                    <a href="category.html?type_id=12">美容</a>
+                    <!-- 菜单 -->
+                    <div class="nav-menu">
+                      <div class="mincate" id="dress"></div>
+                      <div class="mincate" id="cosmet"></div>
+                    </div>
+                  </li>
+                  <li class="dog-item pet-active" data-i="7">
+                    <span>正在进行品牌特卖</span>
+                    <!-- 菜单 -->
+                    <div class="nav-menu">
+                      <div class="action-slider">
+                        <a href="###">
+                          <img src="https://img2.epetbar.com/nowater/showcase/2020/03/31/090455573.jpg" alt="">
+                          <div class="left-time2">仅剩2天</div>
+                        </a>
+                        <a href="###">
+                          <img src="https://img2.epetbar.com/nowater/showcase/2020/03/31/090536618.jpg" alt="">
+                          <div class="left-time2">仅剩2天</div>
+                        </a>
+                        <a href="###">
+                          <img src="https://img2.epetbar.com/nowater/showcase/2020/04/08/092229596.jpg" alt="">
+                          <div class="left-time2">仅剩2天</div>
+                        </a>
+                        <a href="###">
+                          <img src="https://img2.epetbar.com/nowater/showcase/2020/03/31/090444650.jpg" alt="">
+                          <div class="left-time2">仅剩2天</div>
+                        </a>
+                      </div>
+                      <div class="act-click rela">
+                        <a href="###" class="abs btn-tiemai">
+                          <img src="https://static.epetbar.com/www/images/epet/morebuy_icon.png">
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <ul class="nav-list">
+            <li class="nav-item ehk">
+              <a href="http://www.epetht.com" target="_blank"><img
+                  src="https://static.epetbar.com/static_www/www/images/epethk-logo.png" alt=""></a>
+            </li>
+            <li class="nav-item">
+              <a href="brand.html" target="_blank">
+                <b></b>
+                <sapn>品牌特卖</sapn>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="popular.html" target="_blank">
+                <b></b>
+                <sapn>潮品视频</sapn>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="theatre.html" target="_blank">
+                <b></b>
+                <sapn>小剧场</sapn>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="classroom.html" target="_blank">
+                <b></b>
+                <sapn>E宠课堂</sapn>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="union.html" target="_blank">
+                <b></b>
+                <sapn>猫爪联盟</sapn>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="special.html" target="_blank">
+                <b></b>
+                <sapn>清仓特价</sapn>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 注册、登录 -->
+    <div class="newlogin-wrap" id="newlogin">
+      <div class="fiexd" id="fiexd"></div>
+      <div class="newlogin">
+        <div class="signin" id="signin">
+
+          <div class="gototitle">
+            <span class="it1 codevar swt" data-i="0">手机验证码登录</span>
+            <span class="liner"></span>
+            <span class="codevar it1 cf0 swt" data-i="1">账户登录</span>
+          </div>
+          <div class="gotologin_con">
+            <div class="login-way">
+              <div class="setting settinguser pl15 flex flex-ac">
+                <span class="pr10"></span>
+                <input type="text" placeholder="请输入手机号" maxlength="11" class="it1">
+              </div>
+              <div class="setting settingcode  pl15 flex flex-pj flex-ac rela">
+                <input type="text" placeholder="请输入短信验证码" maxlength="4" class="it1">
+                <a class="ft14 ftc inputcode"><span id="getcodes" class="codevar">获取验证码</span></a>
+                <div id="popup-captcha"></div>
+              </div>
+            </div>
+            <div class="login-way db">
+              <div class="setting settinguser pl15 flex flex-ac">
+                <span class="pr10"></span>
+                <input id="logtel" type="text" placeholder="请输入手机号/账号" class="it1">
+              </div>
+              <div class="setting settingpw pl15 flex flex-ac">
+                <span class="pr10"></span>
+                <input id="logpsw" type="password" maxlength="20" placeholder="请输入密码" class="it1">
+                <a href="https://passport.epet.com/retrieve_password.html?referer=" target="_blank"
+                  class="ft14 ftc inputcode">
+                  <span class="codevar c999">忘记密码</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="loginbtn" class="bindusergray cfff ft14 ftc mt20 codevar">登录</div>
+          <div class="otherlogin">
+            <span class="loginstype">
+              <a href="#" class="zhifubao"></a>
+              <a href="#" class="weixin"></a>
+              <a href="#" class="QQ"></a>
+            </span>
+            <span class="que ft12 c999">
+              <a class="mr codevar">手机快速注册</a>
+              <span class="codevar">遇到问题？</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="signup sign" id="signup">
+          <div class="gototitle">
+            <span class="it1 codevar cf0" data-i="0">新用户注册</span>
+            <span class="liner"></span>
+            <span class="codevar it1" id="gotosign">直接登录</span>
+          </div>
+          <div class="gotologin_con">
+            <div class="login-way db">
+              <div class="setting settinguser pl15 flex flex-ac">
+                <span class="pr10"></span>
+                <input id="regtel" type="text" placeholder="请输入手机号" maxlength="11" class="it1">
+              </div>
+              <div class="setting settingpw  pl15 flex flex-pj flex-ac rela">
+                <span class="pr10"></span>
+                <input id="regpsw" type="password" maxlength="20" placeholder="请输入密码" class="it1">
+              </div>
+            </div>
+          </div>
+          <div class="bindusergray cfff ft14 ftc mt20 codevar" id="registerbtn">注册</div>
+          <div class="otherlogin">
+            <span class="que ido">
+              <span class="dib argent_ico"></span>
+              <span>我同意E宠</span>
+              <a class="mr codevar">《用户实用协议》</a>
+            </span>
+            <span class="codevar">遇到问题？</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="line2"></div>
+
+  </header>
+
+  <div class="slider-banner">
+    <a href="brand.html" class="slider-item">
+    </a>
+    <div class="bottom_list">
+      <ul class="list1">
+        <li class="list_item active" data-x="0">
+          <a id="demo">
+            <div class="bar">
+              <div class="item2"> </div>
+              <div class="item1">
+                <p class="title">主食</p>
+                <p class="desc">日常饮食 基础营养</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="list_item" data-x="1">
+          <a id="demo">
+            <div class="bar">
+              <div class="item2"> </div>
+              <div class="item1">
+                <p class="title">零食</p>
+                <p class="desc">日常饮食 基础营养</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="list_item" data-x="2">
+          <a id="demo">
+            <div class="bar">
+              <div class="item2"> </div>
+              <div class="item1">
+                <p class="title">医疗保健</p>
+                <p class="desc">日常饮食 基础营养</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="list_item" data-x="3">
+          <a id="demo">
+            <div class="bar">
+              <div class="item2"> </div>
+              <div class="item1">
+                <p class="title">玩具日用</p>
+                <p class="desc">日常饮食 基础营养</p>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- 主食图片渲染 -->
+  <div class="mainner" id="demo1">
+    <div class="sale-title">
+      <img src="https://static.epetbar.com/static_www/brandsale/images/bg1.png" alt="" width="93px">
+    </div>
+    <ul class="points">
+      <li class="points-item">
+      </li>
+      <li class="points-item">
+      </li>
+      <li class="points-item">
+      </li>
+      <li class="points-item">
+      </li>
+      <li class="points-item">
+      </li>
+      <li class="points-item">
+      </li>
+    </ul>
+  </div>
+  <!-- 零食图片渲染 -->
+  <div class="mainner" id="demo2">
+    <div class="sale-title">
+      <img src="https://static.epetbar.com/static_www/brandsale/images/bg2.png" alt="" width="93px">
+    </div>
+    <ul class="points">
+      <li class="points-item">
+      </li>
+      <li class="points-item">
+      </li>
+      <li class="points-item">
+      </li>
+      <li class="points-item">
+      </li>
+      <li class="points-item">
+      </li>
+      <li class="points-item">
+      </li>
+    </ul>
+  </div>
+  <!-- 医疗保健图片渲染 -->
+  <div class="mainner" id="demo3">
+    <div class="sale-title">
+      <img src="https://static.epetbar.com/static_www/brandsale/images/bg3.png" alt="" width="150px">
+    </div>
+    <ul class="points">
+      <li class="points-item">
+
+      </li>
+      <li class="points-item">
+      </li>
+      <li class="points-item">
+      </li>
+      <li class="points-item">
+      </li>
+      <li class="points-item">
+      </li>
+      <li class="points-item">
+      </li>
+    </ul>
+  </div>
+  <!-- 玩具日用 图片渲染 -->
+  <div class="mainner" id="demo4">
+    <div class="sale-title">
+      <img src="https://static.epetbar.com/static_www/brandsale/images/bg4.png" alt="" width="150px">
+    </div>
+    <ul class="points">
+      <li class="points-item">
+      </li>
+      <li class="points-item">
+      </li>
+      <li class="points-item">
+      </li>
+      <li class="points-item">
+      </li>
+      <li class="points-item">
+      </li>
+      <li class="points-item">
+      </li>
+    </ul>
+  </div>
+  <footer class="footer">
+    <div class="foot-top">
+      <div class="container foot-serve">
+        <ul class="serve-list">
+          <li class="serve-item zp">正品保障</li>
+          <li class="serve-item pl">品类丰富</li>
+          <li class="serve-item yz">优质服务</li>
+          <li class="serve-item kx">科学养宠</li>
+          <li class="serve-item gy">E宠公益</li>
+          <li class="serve-item ty">十年同心</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <div class="container">
+        <div class="info">
+          <div class="info-phone">
+            <div class="img">
+              <img src="https://static.epetbar.com/www/newFooter/dog_phone.gif" alt="">
+            </div>
+            <div class="phone">
+              <h2 class="ft14 c666">售后电话：</h2>
+              <p class="c666 ft20 mt15">4008889200<span class="ml5 ft12">「免长途费」</span></p>
+              <p class="c666 ft20 mt15">023-68851700</p>
+              <p class="c444 ft12 mt15">服务时间：09:00--18:30（周一到周日）</p>
+            </div>
+          </div>
+          <div class="servers-list">
+            <table>
+              <tr>
+                <th>购物指南</th>
+                <th>售后服务</th>
+              </tr>
+              <tr>
+                <td>新人优惠</td>
+                <td>退换货政策</td>
+              </tr>
+              <tr>
+                <td>购物问题</td>
+                <td>退款说明</td>
+              </tr>
+              <tr>
+                <td>支付问题</td>
+                <td>售后问题</td>
+              </tr>
+            </table>
+          </div>
+          <div class="app-code code">
+            <p>扫码下载APP</p>
+            <p>下单更优惠</p>
+            <div class="img">
+              <img src="https://static.epetbar.com/www/images/dw2.png?v=10" alt="">
+            </div>
+          </div>
+          <div class="wx-code code">
+            <p>扫码关注E宠</p>
+            <p>商城微信</p>
+            <div class="img">
+              <img src="https://static.epetbar.com/www/images/app-code.jpg?v=10" alt="">
+            </div>
+          </div>
+        </div>
+        <ul class="link">
+          <li class="link-item">关于我们</li>
+          <li class="link-item">
+            <img src="https://static.epetbar.com/static_web/pc/src/images/background/weibo_logo.png" alt="">E宠商城</li>
+          <li class="link-item">
+            <img src="https://static.epetbar.com/static_web/pc/src/images/background/weixin_logo.png" alt="">E宠商城</li>
+          <li class="link-item">
+            <img src="https://static.epetbar.com/static_web/pc/src/images/background/baidu_log.png" alt="">E宠商城百家号</li>
+          <li class="link-item">
+            <img src="https://static.epetbar.com/static_web/pc/src/images/background/toutiao_logo.png" alt="">E宠说</li>
+          <li class="link-item">E宠公益</li>
+          <li class="link-item">联系我们</li>
+          <li class="link-item">公司地址</li>
+          <li class="link-item">应急响应</li>
+          <li class="link-item">仓储中心</li>
+          <li class="link-item">用户协议</li>
+        </ul>
+        <div class="support">
+          <img src="https://static.epetbar.com/www/newFooter/12315.png" alt="" title="12315消费维权">
+          <img src="https://static.epetbar.com/www/newFooter/360.png" alt="" title="360网站完全">
+          <img src="https://static.epetbar.com/www/newFooter/chengxin.png" alt="" title="诚信网站">
+          <img src="https://static.epetbar.com/www/newFooter/shiming.png" alt="">
+          <img src="https://static.epetbar.com/www/newFooter/tx.png" alt="">
+          <img src="https://static.epetbar.com/www/newFooter/jybz.png" alt="">
+          <img src="https://static.epetbar.com/www/newFooter/cqgs.png" alt="">
+          <img src="https://static.epetbar.com/www/newFooter/baiq.png" alt="">
+          <img src="https://static.epetbar.com/www/newFooter/wsls.png" alt="">
+          <img src="https://static.epetbar.com/www/newFooter/sfqy.png" alt="">
+          <img src="https://static.epetbar.com/www/newFooter/yxqy.png" alt="">
+          <img src="https://static.epetbar.com/www/newFooter/bhdw.png" alt="">
+          <img src="https://static.epetbar.com/www/newFooter/sjws.png" alt="">
+        </div>
+        <div class="copy">
+          <a href="#">渝ICP备10002905号-1</a>&nbsp;&nbsp;<a href="#">渝ICP备10002905号-3</a>　<a href="#">营业执照</a>　<a
+            href="#">兽药经营许可证</a>　增值电信业务经营许可证：渝B2-20140042 Copyright © 2007-2020 epet.com 　重庆易宠科技有限公司
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <slider class="slider">
+    <ul class="slider-up">
+      <li class="item i-user">
+        <a class="bg user w35" href="#"></a>
+        <div class="userbox" id="userbox">
+          <div style="text-align: center;color: #000;padding: 50px 0;">
+            您还没有登录，请先登录。
+          </div>
+        </div>
+      </li>
+      <li class="item i-cart">
+        <a class="cart" href="#">
+          <span class="bg w35"></span>
+          <div class="cart-num">
+            购物车<span id="cart-num3">0</span>
+          </div>
+        </a>
+        <div class="cartbox" id="cartbox">
+          <div style="text-align: center; color: #000;margin-bottom: 20px; font-weight: 600; font-size: 14px;">
+            您的购物车中暂无商品，赶快选择心爱的商品吧！</div>
+        </div>
+      </li>
+      <li class="item i-kefu" id="kefu">
+        <a class="cart serve" href="#">
+          <span class="bg w35"></span>
+          <div class="cart-num">
+            在线客服<span>0</span>
+          </div>
+        </a>
+      </li>
+      <li class="item">
+        <a class="bg order w35" href="#"></a>
+      </li>
+      <li class="item">
+        <a class="bg view w35" href="#"></a>
+      </li>
+    </ul>
+    <ul class="slider-down">
+      <li class="item phone">
+        <a class="bg order w35 app" href="#">
+          <span></span>
+        </a>
+      </li>
+      <li class="item wx">
+        <a class="bg view w35 wx" href="#">
+          <span></span>
+        </a>
+      </li>
+      <li class="item sina">
+        <a class="bg view w35 wb" href="#">
+          <span></span>
+        </a>
+      </li>
+      <li class="item btop">
+        <a id="toTop" class="bg view w35 top" href="#">
+          <span>返回顶部</span>
+        </a>
+      </li>
+    </ul>
+
+    <!-- 客服 -->
+    <div class="kf-body" id="kf-body">
+      <div class="body-hd">
+        <div class="body-hd-l">
+          <img
+            src="https://ysf.nosdn.127.net/E7555429A803B5C02803F7AF8C204467?imageView&type=png%7CimageView&thumbnail=76y76&axis=5"
+            alt="">
+          <span>机器人小E</span>
+        </div>
+        <div class="body-hd-r">
+          <div class="minimize" id="minimize">
+            <i></i>
+          </div>
+        </div>
+      </div>
+      <ul class="body-md" id="msgbox">
+        <h3 class="sys-info">客服 机器人小E 为您服务</h3>
+        <div class="msg msg-l">
+          <div class="msg-main">
+            <p>您好，我是机器人客服，请问有什么可以帮您？</p>
+            <p><br></p>
+            <p><span style="color: rgb(17, 31, 44);"><span style="font-size: 14px;">猫砂限时单件包邮活动开启啦~</span></span></p>
+            <p><span style="color: rgb(17, 31, 44);"><span
+                  style="font-size: 14px;">目前全国大部分地区均可包邮，部分猫砂需要手动选择百世快递</span></span></p>
+            <p><span style="color: rgb(17, 31, 44);"><span style="font-size: 14px;">活动传送门：</span></span><a
+                target="_blank" href="https://wap.epet.com/app/orderTopic/1436"
+                style="color: var(--common_blue1_color,#0089ff); background-color: rgb(255, 255, 255);"><span>https://wap.epet.com/app/orderTopic/1436</span></a>
+            </p>
+            <p><span style="color: rgb(17, 31, 44);"><span style="font-size: 14px;">近30日火爆单品：</span></span></p>
+            <p><span style="color: rgb(17, 31, 44);"><span style="font-size: 14px;">俏尾巴混合砂 买组合三件可赠30元巅峰券包</span></span>
+            </p>
+            <p><span style="color: rgb(17, 31, 44);"><span
+                  style="font-size: 14px;">券包由10元无门槛+99-20元指定猫罐券组成</span></span></p>
+          </div>
+        </div>
+        <div class="msg msg-l">
+          <div class="msg-main">
+            <div class="qa_label">机器人小E可以回答您！</div>
+            <ul>
+              <li><a>猫砂包邮限时活动？</a></li>
+              <li><a>什么时候发货</a></li>
+              <li><a>退款什么时候到账？</a></li>
+              <li><a>罐头可以保存多久？</a></li>
+              <li><a>宠物多久驱一次虫？</a></li>
+              <li><a>福来恩滴剂怎么用</a></li>
+              <li><a>怎么给宠物换粮？</a></li>
+              <li><a>如何联系人工客服？</a></li>
+            </ul>
+          </div>
+        </div>
+      </ul>
+      <div class="body-bd">
+        <textarea id="msgipt" placeholder="输入消息..."></textarea>
+        <span class="send-btn" id="sendbtn">发送</span>
+      </div>
+    </div>
+  </slider>
+
+  
+  <!-- <script src="../public/signin_up.js"></script> -->
+  <script src="../public/js/menus.js"></script>
+  <script src="../public/js/area.js"></script>
+  <script>
+
+    var region_tab = document.querySelector('.region_tab')
+    var i_box_a = document.querySelectorAll('.i_box_a')
+    var a_itme = document.querySelector('.a_itme')
+    var b_itme = document.querySelector('.b_itme')
+    var c_itme = document.querySelector('.c_itme')
+    var a_box = document.querySelector('.a_box')
+    var b_box = document.querySelector('.b_box')
+    var c_box = document.querySelector('.c_box')
+    var i_box = document.querySelector('.i_box')
+    var text_c = document.querySelector('.text_c')
+    var region_box = document.querySelector('.region_box')
+
+
+    //渲染一级标题
+    var s = r_data.map(val => {
+      return val.direction
+    })
+    //去重
+    var c = []
+    for (var i = 0; i < s.length; i++) {
+      if (c.indexOf(s[i]) == -1) {
+        c.push(s[i])
+      }
+    }
+    // console.log(c)
+    var str = ''
+    c.forEach(val => {
+      str += `
+        <li>${val}：</li>
+        `
+    })
+    i_box.innerHTML = str
+    // console.log(r_data)
+    //渲染一级标题
+
+    ra('西南')
+    ra('东北')
+    ra('华中')
+    ra('华南')
+    ra('西北')
+    ra('其他')
+    ra('华东')
+    ra('华北')
+    function ra(val) {
+      var str = ''
+      var a = c.indexOf(val)
+      var h = r_data.filter(itme => {
+        return itme.direction == val
+      })
+      for (var i = 0; i < h.length; i++) {
+        str += `
+            <li class="i_box_li" data-i=>${h[i].name}</li>
+            `
+      }
+      i_box_a[a].innerHTML = str
+      i_box_a[a].onclick = function (e) {
+        if (e.target.localName == 'li') {
+          var i_box_li = document.querySelectorAll('.i_box_li')
+          a_itme.innerHTML = e.target.innerHTML
+          for (var i = 0; i < 34; i++) {
+            i_box_li[i].classList.remove('active')
+          }
+          a_itme.style.backgroundColor = "#f6f6f6"
+          e.target.classList.add('active')
+          b_itme.style.backgroundColor = "#fff"
+          var text = e.target.innerHTML
+          var t = document.querySelector('.t')
+          t.style.display = 'none'
+          b_itme.style.display = "block"
+          b_box.style.display = 'block'
+          b_box.style.display = 'flex'
+          b_itme.innerHTML = "请选择"
+          text_c.innerHTML = e.target.innerHTML
+          rb(text)
+        }
+      }
+    }
+
+    function rb(text) {
+      var s = r_data.filter(val => {
+        return val.name == text
+      })
+      var str = ''
+      for (var i = 0; i < s[0].city.length; i++) {
+        str += `
+            <li>${s[0].city[i].name} </li>
+            `
+      }
+      b_box.innerHTML = str
+      var b_box_li = document.querySelectorAll('.b_box>li')
+      b_box.onclick = function (e) {
+        if (e.target.localName == 'li') {
+          for (var i = 0; i < b_box_li.length; i++) {
+            b_box_li[i].classList.remove('active')
+          }
+          e.target.classList.add('active')
+          b_itme.innerHTML = e.target.innerHTML
+          region_box.style.display = 'none'
+        }
+      }
+    }
+    var region = document.querySelector('.region')
+    region.onmouseover = function () {
+      region_box.style.display = 'block'
+    }
+    region.onmouseout = function () {
+      region_box.style.display = 'none'
+    }
+    a_itme.onclick = function () {
+      var t = document.querySelector('.t')
+      t.style.display = "block"
+      t.style.display = "flex"
+      b_box.style.display = 'none'
+    }
+    b_itme.onclick = function () {
+      var t = document.querySelector('.t')
+      t.style.display = "none"
+      b_box.style.display = 'block'
+      b_box.style.display = 'flex'
+    }
+
+  </script>
+  <!-- 菜单列表 -->
+  <script>
+    const foodbox = document.getElementById('food')
+    const snacksbox = document.getElementById('snacks')
+    const cushionbox = document.getElementById('cushion')
+    const toysbox = document.getElementById('toys')
+    const cleaningbox = document.getElementById('cleaning')
+    const healthbox = document.getElementById('health')
+    const nursingbox = document.getElementById('nursing')
+    const livebox = document.getElementById('live')
+    const dragbox = document.getElementById('drag')
+    const washbox = document.getElementById('wash')
+    const dressbox = document.getElementById('dress')
+    const cosmetbox = document.getElementById('cosmet')
+
+    let food = meunsArr[0];
+    let snacks = meunsArr[1];
+    let cushion = meunsArr[2];
+    let toys = meunsArr[3];
+    let cleaning = meunsArr[4];
+    let health = meunsArr[5];
+    let nursing = meunsArr[6];
+    let live = meunsArr[7];
+    let drag = meunsArr[8];
+    let wash = meunsArr[9];
+    let dress = meunsArr[10];
+    let cosmet = meunsArr[11];
+
+
+    function setData(data, box) {
+      // console.log(data)
+      let str = '';
+
+      str += `
+        <div class="ctitle">
+          <img src="${data.imgurl}"
+            alt="">
+          <a href="category.html?type_id=${data.id}">${data.title}</a>
+          <i></i>
+        </div>
+        <div class="dotline"></div>`;
+
+      for (let i = 0; i < data.child.length; i++) {
+        str += `
+            <div class="middle">
+              <div class="mid_head">
+                <a href="category.html?type_sort_id=${data.child[i].id}">${data.child[i].title}</a>
+                <img alt="7"
+                  src="${data.child[i].imgurl}">
+              </div>
+              <div class="mid_list">`
+
+        for (let j = 0; j < data.child[i].children.length; j++) {
+          str += `<a href="category.html?type_sort_id=${data.child[i].id}&lab=${data.child[i].children[j]}">${data.child[i].children[j]}</a>`
+        }
+
+        str += `
+                    </div>
+                  </div>
+                <div class="dotline"></div>`
+      }
+
+      box.innerHTML = str;
+    }
+    setData(food, foodbox)
+    setData(snacks, snacksbox)
+    setData(cushion, cushionbox)
+    setData(toys, toysbox)
+    setData(cleaning, cleaningbox)
+    setData(health, healthbox)
+    setData(nursing, nursingbox)
+    setData(live, livebox)
+    setData(drag, dragbox)
+    setData(wash, washbox)
+    setData(dress, dressbox)
+    setData(cosmet, cosmetbox)
+
+  </script>
+  
+  <!-- 搜索 -->
+  <script>
+    const sipt = document.getElementById('search-ipt')
+    const sbtn = document.getElementById('search-btn')
+    const slist = document.getElementById('search-list')
+
+    // 节流
+    let pass = false;
+    sipt.oninput = function() {
+      if (pass) return 
+
+      pass = true 
+
+      setTimeout(() => {
+        // console.log(sipt.value)
+        if(sipt.value) {
+          search(sipt.value)
+          sbtn.onclick = searchKey
+        }else {
+          slist.style.display = 'none'
+          sbtn.onclick = null
+        }
+        pass = false
+      }, 800)
+    }
+
+    function search(keyword) {
+      let str = ''
+      fetch('http://localhost:3000/search?keyword=' + keyword)
+        .then(response => {
+          return response.json()
+        })
+        .then(res => {
+          if(res.data.length) {
+            console.log(res.data)
+            for(let i = 0; i < res.data.length; i++) {
+              str += `
+                <li class="item"><a href="./view/detail.html?id=${res.data[i].id}">${res.data[i].subject}</a></li>
+              `
+            }
+            slist.innerHTML = str
+            slist.style.display = 'block'
+          }else {
+            slist.innerHTML = null
+            slist.style.display = 'none'
+          }
+        })
+    }
+
+    function searchKey() {
+      let keyword = sipt.value
+      // console.log(keyword)
+
+      window.location.href = 'category.html?keyword=' + keyword;
+    }
+
+  </script>
+
+  <script>
+    
+    const gototitle = document.querySelector('.gototitle')
+    const logininfo = document.getElementById('userinfo')
+    const swt = document.querySelectorAll('.swt')
+    const loginway = document.querySelectorAll('.login-way')
+    const gotosign = document.getElementById('gotosign')
+    const signin = document.getElementById('signin')
+    const signup = document.getElementById('signup')
+    const tologin = document.getElementById('tologin')
+    const toregister = document.getElementById('toregister')
+    const newlogin = document.getElementById('newlogin')
+    const fiexd = document.getElementById('fiexd')
+
+
+    tologin.onclick = function() {
+      newlogin.style.display = "block"
+      signin.classList.add('sign')
+      signup.classList.remove('sign')
+    }
+    toregister.onclick = function() {
+      newlogin.style.display = "block"
+      signup.classList.add('sign')
+      signin.classList.remove('sign')
+    }
+    fiexd.onclick = function() {
+      newlogin.style.display = "none"
+    }
+
+    gototitle.onclick = function (e) {
+      let a = e.target.dataset.i
+      for (let i = 0; i < swt.length; i++) {
+        swt[i].classList.remove('cf0')
+        loginway[i].classList.remove('db')
+      }
+      swt[a].classList.add('cf0');
+      loginway[a].classList.add('db');
+    }
+
+    gotosign.onclick = function() {
+      signin.classList.add('sign')
+      signup.classList.remove('sign')
+    }
+
+  </script>
+
+  <!-- 登录 -->
+  <script>
+    const userbox = document.getElementById('userbox')
+    const cartbox = document.getElementById('cartbox')
+    const cartnum1 = document.getElementById('cart-num1')
+    const cartnum2 = document.getElementById('cart-num2')
+    const cartnum3 = document.getElementById('cart-num3')
+    let info
+
+    // 判断是否登录
+    function judeLogin() {
+      // console.log(localStorage.userinfo)
+
+      if (localStorage.userinfo !== undefined) {
+        info = JSON.parse(localStorage.userinfo)
+        let li1 = document.createElement('li')
+        let li2 = document.createElement('li')
+        li1.innerHTML = `<span>${info.tel.replace(/(\d{3})\d{4}(\d{4})/, '$1****$2')}</span>`;
+        li2.innerHTML = `<span class="dcc" id="exitbtn">[退出]</span>`;
+
+        logininfo.replaceChild(li1, tologin)
+        logininfo.replaceChild(li2, toregister)
+
+        userbox.innerHTML = `<div class="bagp">
+            <a href="#" class="hd">
+              <img src="https://img2.epetbar.com/dogs/2.jpg" alt="ico">
+            </a>
+            <div class="baginfo">
+              <span>${info.name}</span>
+            </div>
+          </div>
+          <div class="epet-data">
+            <a href="#">
+              <img src="https://img2.epetbar.com/2016-01/09/22/255f31a872b759cca8ae513afc72fa88.jpg">
+            </a>
+            <div class="epet-name">
+              <a href="#">完善宠物资料</a>
+            </div>
+          </div>`
+
+
+        const exitbtn = document.getElementById('exitbtn')
+        exitbtn.onclick = function() {
+          localStorage.removeItem('userinfo')
+          window.location.reload()
+        }
+
+        getCart(info.tel)
+
+      }
+    }
+    judeLogin()
+
+    // 获取购物车信息
+    function getCart(tel) {
+      fetch('http://localhost:3000/cart?user_tel=' + tel)
+      .then(response => {
+        return response.json()
+      })
+      .then(res => {
+        // console.log(res.data)
+        let str = ''
+        let cartnum = 0
+
+        if(res.data.length) {
+          let result = res.data
+          cartnum = result.length
+
+          let total = 0;
+          str = '<ul class="cart-list">'
+          for(let i = 0; i< result.length; i++) {
+            total += result[i].youhui_price*result[i].gnum;
+            str += `
+              <li class="cart-item">
+                <div class="img">
+                  <img src="${result[i].imgurl}" alt="">
+                </div>
+                <div class="info">
+                  <p>
+                    <a href="#">
+                      ${result[i].subject}
+                      <em>${result[i].formats?result[i].formats:''}</em>
+                    </a>
+                  </p>
+                  <p>
+                    <span style="color: red;">￥${result[i].youhui_price} × ${result[i].gnum}</span>
+                  </p>
+                  <div class="remove">
+                    <span onclick="removeCart(${result[i].id})">[删除]</span>
+                  </div>
+                </div>
+              </li>`
+          }
+          str += `</ul>
+            <div class="cart-btn">
+              <div>共<span> ${cartnum} </span>件商品 合计：<span>￥${total}</span></div>
+              <div><a class="btn btn_clear" onclick="clearAll(info.tel)">清空</a><a class="btn">去结算</a></div>
+            </div>`
+        }else {
+          str = `<div style="text-align: center; color: #000;margin-bottom: 20px; font-weight: 600; font-size: 14px;">您的购物车中暂无商品，赶快选择心爱的商品吧！</div>`
+          cartnum = 0
+        }
+        cartnum1.innerHTML = cartnum
+        cartnum2.innerHTML = cartnum
+        cartnum3.innerHTML = cartnum
+        cartbox.innerHTML = str
+      })
+    }
+
+    // 删除购物车列表
+    function removeCart(id) {
+      fetch('http://localhost:3000/delcart?id=' + id)
+      .then(response => {
+        return response.json()
+      })
+      .then(res => {
+        // console.log(res.message)
+        if(res.message == '删除成功！') {
+          getCart(info.tel)
+        }
+      })
+    }
+
+    // 清空购物车
+    function clearAll(tel) {
+      fetch('http://localhost:3000/clecart?tel=' + tel)
+      .then(response => {
+        return response.json()
+      })
+      .then(res => {
+        // console.log(res.message)
+        if(res.message == '删除成功！') {
+          getCart(info.tel)
+        }
+      })
+    }
+  </script>
+
+  <script>
+    // 注册
+  const registerbtn = document.getElementById('registerbtn');
+  const regtel = document.getElementById('regtel');
+  const regpsw = document.getElementById('regpsw');
+
+  const arr = ['Q','W','E','R','T','Y','U','I','O','P','A','S','D','F','G','H','J','K','L','Z','X','C','V','B','N','M','q','w','e','r','t','y','u','i','o','p','a','s','d','f','g','h','j','k','l','z','x','c','v','b','n','m','0','1','2','3','4','5','6','7','8','9']
+
+  regpsw.oninput = function() {
+    let tel = regtel.value;
+    let psw = regpsw.value;
+
+    if(tel !== '' && psw.length > 5) {
+      registerbtn.style.background = '#f03e3e';
+      registerbtn.onclick = register
+    }else {
+      registerbtn.style.background = '#999'
+      registerbtn.onclick = null
+    }
+  }
+
+  function register () {
+    let tel = regtel.value;
+    let psw = regpsw.value;
+    // console.log(tel, psw)
+
+    if(tel == '') {
+      alert('请输入手机号！')
+      return
+    }else if(!tel.match(/^1(3|4|5|6|7|8|9)\d{9}$/) ) {
+      alert('手机号格式错误！')
+      return
+    }else if(psw == '') {
+      alert('请输入密码！')
+      return
+    }else if(!psw.match(/^[a-zA-Z][a-zA-Z0-9]{5,11}$/)) {
+      alert('字母开头，6-12位数字和字母组合')
+      return
+    }else {
+      fetch('http://localhost:3000/judge?tel=' + tel)
+      .then(response => {
+        return response.json()
+      })
+      .then(res => {
+        let result = res.data;
+        // console.log(result)
+  
+        if(result.length > 0) {
+          alert('用户已注册！')
+        }else {
+
+          let str = '主人_';
+          for(let i = 0; i < 10; i++) {
+            str += arr[parseInt(Math.random()*62)]+'';
+          }
+          // console.log(str)
+
+          fetch('http://localhost:3000/register?tel=' + tel + '&psw=' + psw + '&name=' + str)
+          .then(response => {
+            return response.json()
+          })
+          .then(res => {
+            if(res.message == "注册成功！") {
+              let info = {
+                tel: tel,
+                name: name
+              }
+              localStorage.userinfo = JSON.stringify(info)
+              window.location.reload()
+            }
+          })
+          .catch(err => {
+            console.log(err)
+          })
+        }
+      })
+      .catch(err => {
+        console.log(err)
+      })
+    }
+
+  }
+
+
+  // 登录
+  const loginbtn = document.getElementById('loginbtn');
+  const logtel = document.getElementById('logtel');
+  const logpsw = document.getElementById('logpsw');
+
+  logpsw.oninput = function() {
+    let tel = logtel.value;
+    let psw = logpsw.value;
+
+    if(tel !== '' && psw.length > 5) {
+      loginbtn.style.background = '#f03e3e';
+      loginbtn.onclick = login;
+    }else {
+      loginbtn.style.background = '#999'
+      loginbtn.onclick = null
+    }
+  }
+
+  // loginbtn.onclick = login;
+  function login() {
+    let tel = logtel.value;
+    let psw = logpsw.value;
+    // console.log(tel,psw)
+
+    if(tel == '') {
+      alert('请输入手机号！')
+      return
+    }else if(!tel.match(/^1(3|4|5|6|7|8|9)\d{9}$/) ) {
+      alert('手机号格式错误！')
+      return
+    }else if(psw == '') {
+      alert('请输入密码！')
+      return
+    }else if(!psw.match(/^[a-zA-Z][a-zA-Z0-9]{5,11}$/)) {
+      alert('字母开头，6-12位数字和字母组合')
+      return
+    }else {
+      fetch('http://localhost:3000/judge?tel=' + tel)
+      .then(response => {
+        return response.json();
+      })
+      .then(res => {
+        let result = res.data
+        // console.log(result)
+        if(result.length == 0) {
+          alert('用户不存在！')
+        }else {
+          if(result[0].password !== psw) {
+            alert('密码错误！')
+          }else {
+            let info = {
+              tel: result[0].tel,
+              name: result[0].username
+            }
+            localStorage.userinfo = JSON.stringify(info)
+            window.location.reload()
+          }
+        }
+      })
+      .catch(err => {
+        console.log(err)
+      })
+    }
+
+  }
+  </script>
+
+  <!-- 客服 回顶 -->
+  <script>
+    const kefu = document.getElementById('kefu')
+    const minimize = document.getElementById('minimize')
+    const kf_body = document.getElementById('kf-body')
+    const msgbox = document.getElementById('msgbox')
+    const msgipt = document.getElementById('msgipt')
+    const sendbtn = document.getElementById('sendbtn')
+
+    kefu.onclick = function() {
+      kf_body.style.display = 'block'
+    }
+
+    minimize.onclick = function(e) {
+      e.stopPropagation()
+      kf_body.style.display = 'none'
+    }
+
+    msgipt.oninput = function() {
+      let ipt = msgipt.value;
+      if(ipt.length>0){
+        sendbtn.style.opacity = 1
+        sendbtn.onclick = sendMsg
+      }else {
+        sendbtn.style.opacity = .6
+        sendbtn.onclick = null;
+      }
+    }
+
+    function sendMsg() {
+      let ipt = msgipt.value;
+
+      let p = document.createElement('div')
+      p.className = ('msg msg-r')
+      p.innerHTML = `
+          <div class="msg-main">
+            <p>${ipt}</p>
+          </div>`
+      msgbox.appendChild(p)
+      msgbox.scrollTop=msgbox.scrollHeight  //滚动条置底
+      msgipt.value = null
+      sendbtn.style.opacity = .6
+        sendbtn.onclick = null;
+    }
+
+
+    // 回顶部
+    const toTop = document.getElementById('toTop')
+    window.onscroll = function() {
+      if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        toTop.classList.add('on')
+      }else {
+        toTop.classList.remove('on')
+      }
+    }
+    toTop.onclick = function() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0
+    }
+  </script>
+
+<script src="../public/js/brand.js"></script>
+
+</body>
+
+</html>

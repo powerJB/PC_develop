@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小萌书视频达人资料审核表</title>
+  <link rel="stylesheet" href="../public/font/iconfont.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    body {
+      background-color: rgba(254, 247, 236, 1);
+    }
+
+    .header {
+      width: 700px;
+      margin: 32px auto;
+      position: relative;
+    }
+
+    .header>img {
+      width: 100%;
+    }
+
+    .form {
+      width: 100%;
+      background-color: white;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    }
+
+    .form-header {
+      padding: 25px 30px 10px 30px;
+    }
+
+    .form-header p {
+      font-size: 14px;
+      color: #666666;
+      line-height: 1.5
+    }
+
+    .published-form {
+      width: 644px;
+      padding: 28px;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 7px;
+      border-color: rgb(195, 201, 208);
+      outline: none;
+      box-sizing: border-box;
+      resize: vertical;
+      min-height: 76px;
+      overflow-y: hidden;
+    }
+
+    .style {
+      box-sizing: border-box;
+      width: 644px;
+      font-size: 14px;
+      padding: 10px 0;
+      position: relative;
+    }
+
+    .style p {
+      padding-bottom: 4px;
+      font-weight: bold;
+    }
+
+    .style i {
+      color: red;
+      padding-right: 10px;
+      font-size: 16px;
+    }
+
+    textarea:focus {
+      box-shadow: rgba(40, 117, 232, 0.2) 0px 0px 0px 2px;
+      border-color: rgb(40, 117, 232);
+    }
+
+    input {
+      outline: none;
+      width: 50%;
+      border: none;
+      border: 1px solid rgb(195, 201, 208);
+      padding: 7px 11px;
+      border-radius: 2px;
+    }
+
+    input:focus {
+      box-shadow: rgba(40, 117, 232, 0.2) 0px 0px 0px 2px;
+      border-color: rgb(40, 117, 232);
+    }
+
+    .style .iconfont {
+      position: absolute;
+      left: 8px;
+      top: 43px;
+      font-size: 14px;
+      color: rgb(195, 201, 208);
+    }
+
+    button {
+      display: block;
+      margin: 56px auto 20px;
+      padding: 8px 55px;
+      background-color: rgb(255, 133, 51);
+      border-color: rgb(255, 255, 255);
+      border-width: 0px;
+      font-size: 14px;
+      font-weight: normal;
+      color: rgb(255, 255, 255);
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 1px;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .with-qrcode {
+      position: fixed;
+      top: 35px;
+      margin-left: 770px;
+      width: 110px;
+      display: block;
+      font-size: 12px;
+      color: #333;
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 2px;
+    }
+
+    .with-qrcode img {
+      width: 100%;
+    }
+
+    .item .iconfont {
+      font-size: 16px;
+    }
+
+    .txt {
+      font-size: 14px;
+    }
+
+    #item {
+      color: #999;
+    }
+
+    #item {
+      color: #ff8533;
+    }
+
+    .txts {
+      overflow: hidden;
+      font-size: 14px;
+      color: #999;
+      float: right;
+    }
+
+    .bom {
+      margin-top: -20px;
+      display: block;
+      text-align: center;
+      font-size: 14px;
+      color: #545454;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <img src="https://gd-pub.jinshujufiles.com/hi/20200729104831_19c3c6" alt="">
+    <div class="form">
+      <div class="form-header">
+        <h3 style="margin-bottom: 5px;">小萌书视频达人资料审核表</h3>
+        <p>确认过眼神，我遇上对的人~</p>
+        <p>欢迎你来申请小萌书视频达人！</p>
+        <p>镜头下那些生活的琐碎和日常，都是镜头背后普通又鲜活的千万种养宠人生。</p>
+        <p>期待着你的镜头，带给我们养宠的新视角。</p>
+      </div>
+      <div class="published-form">
+        <div class="style">
+          <p><i>*</i>您主要在那些创作平台发布视频作品</p>
+          <textarea name="textarea" id="text" ></textarea>
+        </div>
+        <div class="style">
+          <p><i>*</i>您发布视频作品的账号昵称是？</p>
+          <textarea name="" id="text"></textarea>
+        </div>
+        <div class="style">
+          <p><i>*</i>您擅长创作的萌宠短视频方向(如摄影，吃播，生活记录，搞笑，视频剪辑等等)</p>
+          <textarea name="" id="text"></textarea>
+        </div>
+        <div class="style">
+          <p><i>*</i>填写你的个人作品地址</p>
+          <input type="text" id="text">
+        </div>
+        <div class="style">
+          <p><i>*</i>注册E宠商城的手机号码是？</p>
+          <input type="text" style="padding: 7px 0 7px 22px;" id="texts">
+          <span class="iconfont iconshouji"></span>
+        </div>
+        <div class="style">
+          <p>您在E宠的昵称是？</p>
+          <input type="text">
+        </div>
+        <div class="style">
+          <p><i>*</i>可以联系到您的微信号是？</p>
+          <input type="text" style="padding: 7px 0 7px 22px;" id="text">
+          <span class="iconfont iconlianxirendangan" style="top: 45px;"></span>
+        </div>
+        <div class="style">
+          <p>可以说说您想成为视频达人的理由么？</p>
+          <textarea name=""></textarea>
+        </div>
+        <button id="btn">提交</button>
+
+
+        <a href="###" id="item">
+          <span class="iconfont iconzan"></span>
+          <span class="txt">超级赞</span>
+        </a>
+
+
+
+        <a href="https://jinshuju.net/f/RA1ZrW?x_field_1=hvPBja" class="txts">举报</a>
+      </div>
+    </div>
+    <div class="with-qrcode" style="text-align: center;">
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAEv0lEQVR4Xu2d23bjIAxF3f//6Omat4C92GwLUjc98zgCIZ2jC7KT9Os4jn/He/99yeOsfb3+fv/u86V77fL/xlmHSwcex7EbkBAiGQohA8CSIRxNb60gV4TYCCaXbA0nAMi+6v7eH2s/4THUH0IYvhACGCVDOIiGK2yEVUtOdf/jSxY52Duw+tpJ8WAJt4CT/qX4zPSQpQfemENCSIdACDkP06//sxSfZMj5SYUtuR9HCNVoW7JsT7PriTCyd7j/CRkSQl4oDCHneKYMIHkyRA6SVPMJcJJ/HCHVmk6AWDmVVCJY+fPEkqUc2DDXVAdHIvzXNfUQ0iGwtUZeRDSlPNlDDxspYkn+uJJFBpOcHKL9JCf9u+VkH8kb+2Z6CCkkOQFC+0lO+nfLyT6Sh5AOoSphBDjJQ8hvI4QYrcptk65G8Or9Vf+H+5/wqZPVgO0mPITIa3kIkSGzG7Dd+qW7bvnuocpZc72aBsfqZE8lc4UP0zpCCL8xnAZzxcIQEkJ0HP25kkUO2ywifatrvmYYNqz2V+mbmUOUwhvfN6neikIIIJAMaQFSAZ0MOUeXAnCiIih9M4vpnk7y3uXdGUQlzNpbtZ/saTgIIfu/8xhCZI+bCcpXlTbDQ8hfI4QYr8qr12DaT3OQtZ8yRtkzk650oHWA1pMDVXkIIQY6eRVw2h9CQkiDwLDiXJUsKlGrI/Cnz6v6Y+0fzjUh5DyHWIDt+hDSIUCTugXYrg8hv42QasTQraWqf3WNJ30kJ3/lHab9eayrp73WIDIwhIwp0h8lpRoZQmxOtOtDyOaeYulBQkjhzOOWkQ4qYXQ+yUk/ZTz5R/pL9s28MaSSRAYMr3kbviNIgIUQWSIswZbwEBJChs+yTq9w353iVALJHsqIaoZZ++g8NUasmENsE7QOV/UTYCRXgF4oU/tDCNHhHz7agGvWh5APIIRSsFpirH7bc5iC8Qo6z97icDDcDUjJ4IlfgqCACCFw7bU11wZMlQC61ZE9yr87PYQMoAhNhrQUlUuWYnziGkgRTDWbIpj0r5aXAvZOhoSQMYUhRPao1RlhA3RY0pMh6+kpZ8h6k5xGavIUge40/hNPdCmhnmX3nyZ169Dq9SHkBdESm4uYCSEhZBhKNkjttRwPtxFaTQxqetQzyN7VgBLgJCe8cDAkBVV5CJGTehVw2h9CQsgwRqjkVOUUoFiybA1WB048Pid91GNo/7t7EM0tpzmEIoAcJDnpJ4BIvw0gOq+qj/YPz595dEKAkDyEDHrGVboTYAQ4yUk/RSzpp4hUJePGJynJP3X+TIZYwOgWVQWQ9hNA1h8KCOppdF7jTwixcPN6CsghgSGEAbYrQkiHWEpWBwhFCPUAisgq4GQfnb/afj2HUFOyTW21QxZgu578IwI/7pZFDlmA7foQAiGXkiVzkiKQShYBThkjzcXlZK+1Z4jPE6+9IUTekiikkiFjhJIhFEEgf1zJKvrT/pbHgvchNgOpBFo54VEicKaHkAEk3+2w1V8llPwNIbIHhhAJmI3Aj88QAqQqpwgl/bS/VDJuvKCiOYTswQ85ECBVOQFK+mk/AVAFkOyjjB2ef9XU6cCqnAAl/bQ/hBCCP9xDyDwb0av1Ned/AxFrlDs/uOMAAAAAAElFTkSuQmCC"
+        alt="">
+      <p>扫一扫分享给好友</p>
+    </div>
+  </div>
+  <a href="https://jinshuju.net/?reg_from=jsj_pc_pub_bottom&utm_source=pub_footer" class="bom">
+    <span class="iconfont iconshu"></span>
+    <span class="bot">金数据提供技术支持</span>
+  </a>
+  <script>
+    var text = document.getElementById('text')
+    var btn = document.getElementById('btn')
+    var phone = document.getElementById('texts');
+
+    btn.onclick = function () {
+
+      if (text.value == '') {
+        alert('信息未完善')
+      } else if (!(/^1(3|4|5|6|7|8|9)\d{9}$/.test(phone.value))) {
+        alert("该手机号码格式无法识别");
+      } else if (text.value !== '') {
+        window.location.href =
+          "https://jinshuju.net/f/hvPBja/success?e_token=eyJhbGciOiJIUzI1NiJ9.eyJkYXRhIjpbIjdGYjl6ZFRIIiwiNWYyMGRlZTg1ZWZhNzc3NzM3NDc4MDZiIl0sImV4cCI6MTU5OTc5NzI3NX0.Iw-atjnccfv5-yOLlrnt6PyoTxalOUj38PK4ydSY5Bw";
+      }
+    }
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,477 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f5f5 !important;
+  min-width: 1200px;
+}
+
+.img {
+  margin-top: 10px;
+}
+
+.img img {
+  display: block;
+  margin: 0 auto;
+}
+
+.content {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.cg-nav {
+  margin-top: 20px;
+}
+
+.cg-nav-left {
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  height: 51px;
+}
+
+.title {
+  height: 50px;
+  padding-left: 38px;
+  line-height: 50px;
+  box-sizing: border-box;
+  border-right: 1px dashed #ddd;
+  color: #46ab50;
+  font-size: 20px;
+  cursor: pointer
+}
+
+.cg-nav-left-b i {
+  margin-left: 8px;
+  vertical-align: middle;
+  color: #46ab50;
+}
+
+.cg-nav-left-a {
+  width: 200px;
+  font-size: 14px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.cg-nav-left ul,
+.cg-nav-left li {
+  list-style: none;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.cg-nav-left-c {
+  display: none;
+  position: relative;
+  z-index: 999;
+  background: #fff;
+}
+
+.cg-nav-left-b:hover .cg-nav-left-c {
+  display: block;
+}
+
+.cg-nav-d,
+.cg-nav-e {
+  color: #444444;
+}
+
+.cg-z:hover {
+  color: #248dcc;
+}
+
+.cg-x span:hover {
+  color: #248dcc;
+}
+
+.cg-nav-left-c li:hover .cg-nav-d {
+  display: block;
+}
+
+.cg-nav-d {
+  position: absolute;
+  top: 0;
+  left: 196px;
+  border: 1px solid #ddd;
+  width: 300px;
+  line-height: 56px;
+  text-align: left;
+  padding: 0 20px;
+  z-index: -1;
+}
+
+.cg-title li {
+  position: relative;
+}
+
+.cg-nav-d {
+  text-align: left;
+  display: none;
+  background-color: white;
+
+}
+
+.cg-nav-e {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cg-nav-e li {
+  width: 50%;
+  height: 66px;
+  line-height: 66px;
+  text-align: left;
+}
+
+.cg-nav-d span:hover {
+  color: #248dcc;
+}
+
+.cg-nav-e li:hover {
+  color: #248dcc;
+}
+
+.cg-nav-left-b:hover {
+  border: 1px solid #ddd;
+}
+
+.cg-x {
+  position: relative;
+}
+
+.cg-x:hover {
+  width: 199px;
+  box-sizing: border-box;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-left: 2px solid green;
+  border-right: 2px solid #fff;
+}
+
+.nav-right {
+  display: flex;
+  width: 381px;
+  height: 50px;
+  line-height: 50px;
+  justify-content: space-between;
+  border-right: 1px dashed #ddd;
+}
+
+.nav-right ul {
+  display: flex;
+  height: 50px;
+  line-height: 50px;
+}
+
+.nav-right li {
+  font-size: 12px;
+  color: #757575;
+}
+
+/* .nav-right input{
+  vertical-align: middle;
+  margin-right: 5px;
+} */
+.nav-right ul:first-child {
+  margin-left: 20px;
+}
+
+.cg-nav-cent {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #ccc;
+  vertical-align: -2px;
+  margin: 0px 5px 0px 30px;
+  border: 1px solid #46ab50;
+  background: url(https://static.epetbar.com/www/cleargoods/images/clear-ico.png) 0px -4px no-repeat;
+}
+
+.cg-nav-left {
+  position: relative;
+}
+
+.nav-rig {
+  height: 50px;
+  line-height: 50px;
+}
+
+.nav-rig ul {
+  display: flex;
+}
+
+.nav-rig {
+  width: 145px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.nav-rig span {
+  position: relative;
+  font-size: 12px;
+  color: #444444;
+}
+
+.nav-rig li {
+  width: 40px;
+  height: 50px;
+  margin-right:20px;
+}
+
+.nav-rig b {
+  position: absolute;
+  width: 7px;
+  height: 6px;
+  margin-top: -2px;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+.b1 {
+  background-position: 0px -86px;
+  top: 20px;
+  background-image: url(https://static.epetbar.com/www/cleargoods/images/clear-ico.png);
+  position: absolute;
+  left: 25px;
+}
+.active1{
+  background-position: -8px -86px;
+}
+
+.b2 {
+  background-position: 0px -94px;
+  top: 28px;
+  background-image: url(https://static.epetbar.com/www/cleargoods/images/clear-ico.png);
+  position: absolute;
+  left: 25px;
+}
+.active2{
+  background-position: -8px -94px;
+}
+
+.b3 {
+  background-position: 0px -86px;
+  top: 20px;
+  background-image: url(https://static.epetbar.com/www/cleargoods/images/clear-ico.png);
+  position: absolute;
+  left: 85px;
+}
+.active3{
+  background-position: -8px -86px;
+}
+
+
+.b4 {
+  background-position: 0px -94px;
+  top: 28px;
+  background-image: url(https://static.epetbar.com/www/cleargoods/images/clear-ico.png);
+  position: absolute;
+  left: 85px;
+}
+.active4{
+  background-position: -8px -94px;
+}
+
+.fl-rela {
+  width: 280px;
+  height: 340px;
+  border: 1px solid #ddd;
+  margin: 16px 8px;
+  padding-bottom: 15px;
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box !important;
+
+}
+
+.fl-img img {
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.fl-pd {
+  height: 32px;
+  line-height: 32px;
+  padding: 0 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fl-pd img {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ff9700;
+}
+
+.qtype {
+  display: inline-block;
+  width: 53px;
+  height: 17px;
+  line-height: 17px;
+  text-align: center;
+  background: url() no-repeat;
+  /* background-size: 100% 100%; */
+  border: 1px solid #eceaea;
+  color: #625353;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.goodstit {
+  height: 32px;
+  line-height: 16px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 12px 14px !important;
+}
+
+.goodstit a {
+  font-size: 12px;
+  color: #444444;
+  text-decoration: none;
+}
+
+.pricebox {
+  height: 30px;
+  padding: 0 14px;
+  line-height: 30px;
+  position: relative;
+}
+
+.new-price {
+  font-size: 20px;
+  color: #F03E3E;
+  line-height: 30px;
+}
+
+.old-price {
+  margin-left: 5px;
+  color: #999;
+  font-size: 12px;
+  text-decoration: line-through;
+  line-height: 30px;
+}
+
+.pricebox img {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-bottom: 7px;
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+
+.big-img {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: -15px;
+  left: 280px;
+  border: 1px solid #ddd;
+  display: none;
+  z-index: 999;
+  background-color: white;
+}
+
+.big-img img {
+  width: 100%;
+}
+
+.fl-rela:nth-child(4) .big-img,
+.fl-rela:nth-child(8) .big-img,
+.fl-rela:nth-child(12) .big-img {
+  left: -400px;
+}
+
+.fl-img:hover~.big-img {
+  display: block;
+}
+
+.discountLogo {
+  width: 49px;
+  height: 46px;
+  background: url(https://static.epetbar.com/www/cleargoods/images/discountLogo.png) no-repeat;
+  background-size: 100%;
+  left: 0;
+  top: 0;
+  /* z-index: 95; */
+}
+
+.fl-rela .abs {
+  position: absolute;
+}
+
+.ftc {
+  text-align: center;
+}
+
+.cfff {
+  color: #fff;
+}
+
+.fenye {
+  position: absolute;
+  transform: translate(-50%);
+  left: 50%;
+}
+
+
+.up,
+.down {
+  vertical-align: middle;
+  display: inline-block;
+  height: 34px;
+  border: 1px solid #ddd;
+  font-size: 12px;
+  padding: 0 15px;
+  cursor: pointer;
+}
+.page{
+  width: 1200px;
+  height: 90px;
+  line-height: 90px;
+  background-color: #fff;
+}
+
+.pagination>li>a,.pagination>li>span{
+  color: #444444;
+}
+.pagination>li>a:hover,.pagination>li>span:hover { 
+  background-color: #ff6700 ;
+  color: #fff ;
+}
+.page{
+  position: relative;
+}
+.pagination{
+  display: flex;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+.pagination span{
+  display: inline-block;
+  line-height: 34px;
+}
+.pagination a{
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  border: 1px solid #ddd;
+  vertical-align: middle;
+  text-align: center;
+}
